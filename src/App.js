@@ -1,11 +1,11 @@
 
-import './App.css';
+import Home from './Home/Home';
 import UnderConstruct from './UnderConstruct';
 
 function App() {
   return (
-    <div className="App">
-     <UnderConstruct/>
+    <div className="w-full h-[24em]">
+     <Home/>
     </div>
   );
 }

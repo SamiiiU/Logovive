@@ -3,7 +3,7 @@ import Logo from '../Assets/logo.png'
 
 const Nav = () => {
   return (
-    <div className='fixed z-50 text-teal-50 w-full px-20 py-3 bg-[#181818] flex justify-between items-center'>
+    <div className=' z-50 text-teal-50 w-full px-20 py-3 bg-[#181818] flex justify-between items-center'>
       {/* Logo */}
       <div className='logo w-[15%] h-12 '
       style={{backgroundImage : `url(${Logo})` , backgroundSize : '60%' , backgroundPosition : 'center' , backgroundRepeat : 'no-repeat'}}
@@ -25,9 +25,9 @@ const Nav = () => {
             <span className='cursor-pointer  flex-1 px-4 py-3 bg-teal-50 text-blue-950 font-bold text-center'>Get A Quote</span>
         </div>
 
-        
 
-    </div>
+
+      </div>
 
   )
 }

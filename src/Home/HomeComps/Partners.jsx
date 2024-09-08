@@ -2,6 +2,7 @@ import React from 'react'
 import { FaWix } from "react-icons/fa6";
 import manager from '../../Assets/HeroAsset/manager.jpg'
 import { MdOutlineDisplaySettings } from "react-icons/md";
+import offer from '../../Assets/HeroAsset/offer.webp'
 
 
 const Partners = () => {
@@ -141,143 +142,229 @@ const Partners = () => {
             </div>
 
             <div className='w-full flex justify-between items-center flex-wrap gap-y-4'>
-            <div className='w-[33%] py-4 bg-[#222222] hover:scale-[105%] transition-all'>
-                <div className='w-full flex justify-center items-center py-2 text-2xl font-semibold border-b-2 border-b-teal-50'>Logo Basic Design</div>
+                <div className='w-[33%] py-4 bg-[#222222] hover:scale-[105%] transition-all'>
+                    <div className='w-full flex justify-center items-center py-2 text-2xl font-semibold border-b-2 border-b-teal-50'>Logo Basic Design</div>
 
-                <div className='w-full flex justify-center py-4 items-center text-[4rem] font-bold '><span className='text-lg'>$</span>100</div>
+                    <div className='w-full flex justify-center py-4 items-center text-[4rem] font-bold '><span className='text-lg'>$</span>100</div>
 
-                <div className='w-full px-8 pb-16 font-[500] text-[1rem]'>
-                    <p>4 Unique Logo Concepts</p>
-                    <p>FREE Icon</p>
-                    <p>4 Unique Logo Concepts</p>
-                    <p>FREE Icon</p>
-                    <p>4 Unique Logo Concepts</p>
-                    <p>FREE Icon</p>
+                    <div className='w-full px-8 pb-16 font-[500] text-[1rem]'>
+                        <p>4 Unique Logo Concepts</p>
+                        <p>FREE Icon</p>
+                        <p>4 Unique Logo Concepts</p>
+                        <p>FREE Icon</p>
+                        <p>4 Unique Logo Concepts</p>
+                        <p>FREE Icon</p>
+                    </div>
+
+                    <div className='w-full flex justify-center items-center py-2 text-lg font-semibold border-y-2 border-teal-50'>speak with us </div>
+                    <div className='w-full flex justify-center items-center  text-lg font-semibold '>adas</div>
+                    
+
+                    <div className='w-full py-4 flex justify-center '><span className='absolute px-4 py-2 
+                    bg-gradient-to-r  from-[#ef572a] to-[#e80e82] font-semibold'>ORDER NOW</span></div>
+
+                </div> 
+
+                <div className='w-[33%] py-4 bg-[#222222] hover:scale-[105%] transition-all'>
+                    <div className='w-full flex justify-center items-center py-2 text-2xl font-semibold border-b-2 border-b-teal-50'>Logo Basic Design</div>
+
+                    <div className='w-full flex justify-center py-4 items-center text-[4rem] font-bold '><span className='text-lg'>$</span>100</div>
+
+                    <div className='w-full px-8 pb-16 font-[500] text-[1rem]'>
+                        <p>4 Unique Logo Concepts</p>
+                        <p>FREE Icon</p>
+                        <p>4 Unique Logo Concepts</p>
+                        <p>FREE Icon</p>
+                        <p>4 Unique Logo Concepts</p>
+                        <p>FREE Icon</p>
+                    </div>
+
+                    <div className='w-full flex justify-center items-center py-2 text-lg font-semibold border-y-2 border-teal-50'>speak with us </div>
+                    <div className='w-full flex justify-center items-center  text-lg font-semibold '>adas</div>
+                    
+
+                    <div className='w-full py-4 flex justify-center '><span className='absolute px-4 py-2 
+                    bg-gradient-to-r  from-[#ef572a] to-[#e80e82] font-semibold'>ORDER NOW</span></div>
+
                 </div>
 
-                <div className='w-full flex justify-center items-center py-2 text-lg font-semibold border-y-2 border-teal-50'>speak with us </div>
-                <div className='w-full flex justify-center items-center  text-lg font-semibold '>adas</div>
-                
+                <div className='w-[33%] py-4 bg-[#222222] hover:scale-[105%] transition-all'>
+                    <div className='w-full flex justify-center items-center py-2 text-2xl font-semibold border-b-2 border-b-teal-50'>Logo Basic Design</div>
 
-                <div className='w-full py-4 flex justify-center '><span className='absolute px-4 py-2 
-                bg-gradient-to-r  from-[#ef572a] to-[#e80e82] font-semibold'>ORDER NOW</span></div>
+                    <div className='w-full flex justify-center py-4 items-center text-[4rem] font-bold '><span className='text-lg'>$</span>100</div>
 
-            </div> 
+                    <div className='w-full px-8 pb-16 font-[500] text-[1rem]'>
+                        <p>4 Unique Logo Concepts</p>
+                        <p>FREE Icon</p>
+                        <p>4 Unique Logo Concepts</p>
+                        <p>FREE Icon</p>
+                        <p>4 Unique Logo Concepts</p>
+                        <p>FREE Icon</p>
+                    </div>
 
-            <div className='w-[33%] py-4 bg-[#222222] hover:scale-[105%] transition-all'>
-                <div className='w-full flex justify-center items-center py-2 text-2xl font-semibold border-b-2 border-b-teal-50'>Logo Basic Design</div>
+                    <div className='w-full flex justify-center items-center py-2 text-lg font-semibold border-y-2 border-teal-50'>speak with us </div>
+                    <div className='w-full flex justify-center items-center  text-lg font-semibold '>adas</div>
+                    
 
-                <div className='w-full flex justify-center py-4 items-center text-[4rem] font-bold '><span className='text-lg'>$</span>100</div>
+                    <div className='w-full py-4 flex justify-center '><span className='absolute px-4 py-2 
+                    bg-gradient-to-r  from-[#ef572a] to-[#e80e82] font-semibold'>ORDER NOW</span></div>
 
-                <div className='w-full px-8 pb-16 font-[500] text-[1rem]'>
-                    <p>4 Unique Logo Concepts</p>
-                    <p>FREE Icon</p>
-                    <p>4 Unique Logo Concepts</p>
-                    <p>FREE Icon</p>
-                    <p>4 Unique Logo Concepts</p>
-                    <p>FREE Icon</p>
+                </div>   
+
+                <div className='w-[33%] py-4 bg-[#222222] hover:scale-[105%] transition-all'>
+                    <div className='w-full flex justify-center items-center py-2 text-2xl font-semibold border-b-2 border-b-teal-50'>Logo Basic Design</div>
+
+                    <div className='w-full flex justify-center py-4 items-center text-[4rem] font-bold '><span className='text-lg'>$</span>100</div>
+
+                    <div className='w-full px-8 pb-16 font-[500] text-[1rem]'>
+                        <p>4 Unique Logo Concepts</p>
+                        <p>FREE Icon</p>
+                        <p>4 Unique Logo Concepts</p>
+                        <p>FREE Icon</p>
+                        <p>4 Unique Logo Concepts</p>
+                        <p>FREE Icon</p>
+                    </div>
+
+                    <div className='w-full flex justify-center items-center py-2 text-lg font-semibold border-y-2 border-teal-50'>speak with us </div>
+                    <div className='w-full flex justify-center items-center  text-lg font-semibold '>adas</div>
+                    
+
+                    <div className='w-full py-4 flex justify-center '><span className='absolute px-4 py-2 
+                    bg-gradient-to-r  from-[#ef572a] to-[#e80e82] font-semibold'>ORDER NOW</span></div>
+
                 </div>
 
-                <div className='w-full flex justify-center items-center py-2 text-lg font-semibold border-y-2 border-teal-50'>speak with us </div>
-                <div className='w-full flex justify-center items-center  text-lg font-semibold '>adas</div>
-                
+                <div className='w-[33%] py-4 bg-[#222222] hover:scale-[105%] transition-all'>
+                    <div className='w-full flex justify-center items-center py-2 text-2xl font-semibold border-b-2 border-b-teal-50'>Logo Basic Design</div>
 
-                <div className='w-full py-4 flex justify-center '><span className='absolute px-4 py-2 
-                bg-gradient-to-r  from-[#ef572a] to-[#e80e82] font-semibold'>ORDER NOW</span></div>
+                    <div className='w-full flex justify-center py-4 items-center text-[4rem] font-bold '><span className='text-lg'>$</span>100</div>
 
+                    <div className='w-full px-8 pb-16 font-[500] text-[1rem]'>
+                        <p>4 Unique Logo Concepts</p>
+                        <p>FREE Icon</p>
+                        <p>4 Unique Logo Concepts</p>
+                        <p>FREE Icon</p>
+                        <p>4 Unique Logo Concepts</p>
+                        <p>FREE Icon</p>
+                    </div>
+
+                    <div className='w-full flex justify-center items-center py-2 text-lg font-semibold border-y-2 border-teal-50'>speak with us </div>
+                    <div className='w-full flex justify-center items-center  text-lg font-semibold '>adas</div>
+                    
+
+                    <div className='w-full py-4 flex justify-center '><span className='absolute px-4 py-2 
+                    bg-gradient-to-r  from-[#ef572a] to-[#e80e82] font-semibold'>ORDER NOW</span></div>
+
+                </div>
+
+                <div className='w-[33%] py-4 bg-[#222222] hover:scale-[105%] transition-all'>
+                    <div className='w-full flex justify-center items-center py-2 text-2xl font-semibold border-b-2 border-b-teal-50'>Logo Basic Design</div>
+
+                    <div className='w-full flex justify-center py-4 items-center text-[4rem] font-bold '><span className='text-lg'>$</span>100</div>
+
+                    <div className='w-full px-8 pb-16 font-[500] text-[1rem]'>
+                        <p>4 Unique Logo Concepts</p>
+                        <p>FREE Icon</p>
+                        <p>4 Unique Logo Concepts</p>
+                        <p>FREE Icon</p>
+                        <p>4 Unique Logo Concepts</p>
+                        <p>FREE Icon</p>
+                    </div>
+
+                    <div className='w-full flex justify-center items-center py-2 text-lg font-semibold border-y-2 border-teal-50'>speak with us </div>
+                    <div className='w-full flex justify-center items-center  text-lg font-semibold '>adas</div>
+                    
+
+                    <div className='w-full py-4 flex justify-center '><span className='absolute px-4 py-2 
+                    bg-gradient-to-r  from-[#ef572a] to-[#e80e82] font-semibold'>ORDER NOW</span></div>
+
+                </div>
             </div>
 
-            <div className='w-[33%] py-4 bg-[#222222] hover:scale-[105%] transition-all'>
-                <div className='w-full flex justify-center items-center py-2 text-2xl font-semibold border-b-2 border-b-teal-50'>Logo Basic Design</div>
+            
 
-                <div className='w-full flex justify-center py-4 items-center text-[4rem] font-bold '><span className='text-lg'>$</span>100</div>
+        </div>
 
-                <div className='w-full px-8 pb-16 font-[500] text-[1rem]'>
-                    <p>4 Unique Logo Concepts</p>
-                    <p>FREE Icon</p>
-                    <p>4 Unique Logo Concepts</p>
-                    <p>FREE Icon</p>
-                    <p>4 Unique Logo Concepts</p>
-                    <p>FREE Icon</p>
+        <div className='w-full px-24 flex justify-center items-center py-8 mt-16 bg-gradient-to-t from-[#ef572a] to-[#ef572a]/10'>
+            <div className='w-full rounded-xl p-4 border-dashed border-2 border-teal-50 '>
+                <h1 className='bg-zinc-950 px-2 py-1 inline-block font-semibold'>OUR AIM IS TO OFFER YOU THE MAXIMUM VALUE</h1>
+
+                <h1 className='text-5xl font-bold my-3' >SUPER  <span className='text-yellow-400'>COMBO PACKAGE</span></h1>
+
+                <p className='tracking-wide mb-3'>
+                Our Super Combo Package is specially made for people who have completely made up their minds to expand online. This package is designed to give you maximum value for your budget, so don’t wait and order now.
+                </p>
+
+                <div className='flex justify-center items-center w-full gap-2'>
+                    <div className='flex-1 flex flex-col'>
+                        <h1 className='font-bold text-2xl'>Logo Design</h1>
+                        <ul className='text-sm px-2 list-item my-4'>
+                            <li className='mt-2'>Unlimited Logo Design Concepts</li>
+                            <li className='mt-2'>Unlimited Revisions</li>
+                            <li className='mt-2'>Icon Design</li>
+                            <li className='mt-2'>All Final File Formats</li>
+
+                            
+                        </ul>
+
+                        <h1 className='font-bold text-2xl'>Stetionary Design</h1>
+                        <ul className='text-sm px-2 list-item my-4'>
+                            <li className='mt-2'>Business Card, Letterhead, Envelope</li>
+                            <li className='mt-2'>MS Word Letterhead</li>
+                        </ul>
+                    </div>
+
+                    {/* combo 2 */}
+                    <div className='flex-1 flex flex-col'>
+                    <h1 className='font-bold text-2xl'>Website Design</h1>
+                        <ul className='text-sm px-2 list-item my-4'>
+                            <li className='mt-2'>UNLIMITED Pages Website</li>
+                            <li className='mt-2'>Content Management System (CMS)</li>
+                            <li className='mt-2'>Mobile Responsive</li>
+                            <li className='mt-2'>Any 3 Social Media Platforms</li>
+
+                            
+                        </ul>
+
+                        <h1 className='font-bold text-2xl'>Social Media Designs</h1>
+                        <ul className='text-sm px-2 list-item my-4'>
+                            <li className='mt-2'>Facebook, Twitter, Youtube, Linkedin</li>
+
+                        </ul>
+                    </div>
+                    
+                    {/* Combo 3  */}
+                    <div className='flex-1 flex flex-col'>
+                    <h1 className='font-bold text-2xl'>Banner Design</h1>
+                        <ul className='text-sm px-2 list-item my-4'>
+                            <li className='mt-2'>2 Design Concepts</li>
+                            <li className='mt-2'>2 Stock Photos for Banners</li>        
+                        </ul>
+
+                        <h1 className='font-bold text-2xl'>Value Added Services</h1>
+                        <ul className='text-sm px-2 list-item my-4'>
+                            <li className='mt-2'>Dedicated Account Manager</li>
+                            <li className='mt-2'>100% Ownership Rights</li>
+                            <li className='mt-2'>100% Money Back Guarantee</li>
+                            <li className='mt-2'>Complete Deployment</li>
+                        </ul>
+                    </div>
+                    
+                    <div className='flex-1 flex flex-col '>
+                    <div className='w-full h-36 my-8' 
+                    style={{
+                        backgroundImage: `url(${offer})`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                        backgroundRepeat: 'no-repeat',
+                    }}> </div>
+                        
+                    <div className='w-full px-4 py-8 border-teal-50 border-t-2 '>
+                        <span className='px-4 py-2 border-2 border-teal-50 font-semibold hover:bg-teal-50 hover:text-zinc-800'>ORDER NOW</span>
+                    </div>
+
+                    </div>
                 </div>
-
-                <div className='w-full flex justify-center items-center py-2 text-lg font-semibold border-y-2 border-teal-50'>speak with us </div>
-                <div className='w-full flex justify-center items-center  text-lg font-semibold '>adas</div>
-                
-
-                <div className='w-full py-4 flex justify-center '><span className='absolute px-4 py-2 
-                bg-gradient-to-r  from-[#ef572a] to-[#e80e82] font-semibold'>ORDER NOW</span></div>
-
-            </div>   
-
-            <div className='w-[33%] py-4 bg-[#222222] hover:scale-[105%] transition-all'>
-                <div className='w-full flex justify-center items-center py-2 text-2xl font-semibold border-b-2 border-b-teal-50'>Logo Basic Design</div>
-
-                <div className='w-full flex justify-center py-4 items-center text-[4rem] font-bold '><span className='text-lg'>$</span>100</div>
-
-                <div className='w-full px-8 pb-16 font-[500] text-[1rem]'>
-                    <p>4 Unique Logo Concepts</p>
-                    <p>FREE Icon</p>
-                    <p>4 Unique Logo Concepts</p>
-                    <p>FREE Icon</p>
-                    <p>4 Unique Logo Concepts</p>
-                    <p>FREE Icon</p>
-                </div>
-
-                <div className='w-full flex justify-center items-center py-2 text-lg font-semibold border-y-2 border-teal-50'>speak with us </div>
-                <div className='w-full flex justify-center items-center  text-lg font-semibold '>adas</div>
-                
-
-                <div className='w-full py-4 flex justify-center '><span className='absolute px-4 py-2 
-                bg-gradient-to-r  from-[#ef572a] to-[#e80e82] font-semibold'>ORDER NOW</span></div>
-
-            </div>
-
-            <div className='w-[33%] py-4 bg-[#222222] hover:scale-[105%] transition-all'>
-                <div className='w-full flex justify-center items-center py-2 text-2xl font-semibold border-b-2 border-b-teal-50'>Logo Basic Design</div>
-
-                <div className='w-full flex justify-center py-4 items-center text-[4rem] font-bold '><span className='text-lg'>$</span>100</div>
-
-                <div className='w-full px-8 pb-16 font-[500] text-[1rem]'>
-                    <p>4 Unique Logo Concepts</p>
-                    <p>FREE Icon</p>
-                    <p>4 Unique Logo Concepts</p>
-                    <p>FREE Icon</p>
-                    <p>4 Unique Logo Concepts</p>
-                    <p>FREE Icon</p>
-                </div>
-
-                <div className='w-full flex justify-center items-center py-2 text-lg font-semibold border-y-2 border-teal-50'>speak with us </div>
-                <div className='w-full flex justify-center items-center  text-lg font-semibold '>adas</div>
-                
-
-                <div className='w-full py-4 flex justify-center '><span className='absolute px-4 py-2 
-                bg-gradient-to-r  from-[#ef572a] to-[#e80e82] font-semibold'>ORDER NOW</span></div>
-
-            </div>
-
-            <div className='w-[33%] py-4 bg-[#222222] hover:scale-[105%] transition-all'>
-                <div className='w-full flex justify-center items-center py-2 text-2xl font-semibold border-b-2 border-b-teal-50'>Logo Basic Design</div>
-
-                <div className='w-full flex justify-center py-4 items-center text-[4rem] font-bold '><span className='text-lg'>$</span>100</div>
-
-                <div className='w-full px-8 pb-16 font-[500] text-[1rem]'>
-                    <p>4 Unique Logo Concepts</p>
-                    <p>FREE Icon</p>
-                    <p>4 Unique Logo Concepts</p>
-                    <p>FREE Icon</p>
-                    <p>4 Unique Logo Concepts</p>
-                    <p>FREE Icon</p>
-                </div>
-
-                <div className='w-full flex justify-center items-center py-2 text-lg font-semibold border-y-2 border-teal-50'>speak with us </div>
-                <div className='w-full flex justify-center items-center  text-lg font-semibold '>adas</div>
-                
-
-                <div className='w-full py-4 flex justify-center '><span className='absolute px-4 py-2 
-                bg-gradient-to-r  from-[#ef572a] to-[#e80e82] font-semibold'>ORDER NOW</span></div>
-
-            </div>
             </div>
         </div>
     </div>

@@ -4,7 +4,7 @@ import UnderConstruct from './UnderConstruct';
 
 function App() {
   return (
-    <div className="w-full h-[24em]">
+    <div className="w-full h-full ">
      <Home/>
     </div>
   );

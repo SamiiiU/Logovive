@@ -9,7 +9,7 @@ import Footer from '../Common/Footer'
 
 const Home = () => {
   return (
-    <div className='w-full h-screen overflow-x-hidden'>
+    <div className='w-full overflow-x-hidden transition-all'>
     <Nav/>
     <Hero/>
     <Partners/>

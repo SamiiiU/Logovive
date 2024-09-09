@@ -4,30 +4,30 @@ import special from '../../Assets/HeroAsset/special.jpg'
 const Special = () => {
   return (
     <div className='w-full  py-8 bg-[#181818] text-teal-50'>
-      <div className='w-full px-28 mb-16  flex flex-col justify-start items-center '>
+      <div className='flex flex-col items-center justify-start w-full px-8 mb-16 sm:px-16 md:px-28 '>
       <h1 className='px-3 font-bold rounded-md bg-gradient-to-r  from-[#ef572a]   mb-2 to-[#e80e82]'>Our Service</h1>
       
-      <h1 className="font-bold uppercase text-5xl my-2">We Specialized In Web-Based Services</h1>
+      <h1 className="my-2 text-3xl font-bold text-center uppercase md:text-5xl sm:text-4xl">We Specialized In Web-Based Services</h1>
 
-      <p className='text-center font-medium mb-8'>Our team is comprised of expert designers, programmers, and marketers. The total combined experience in our company is over 200 years in multiple fields. We can support your business to build up its worth online.</p>
+      <p className='mb-8 font-medium text-center'>Our team is comprised of expert designers, programmers, and marketers. The total combined experience in our company is over 200 years in multiple fields. We can support your business to build up its worth online.</p>
 
-        <div className='w-full flex flex-wrap gap-y-4 justify-between mb-8'>
-            <div className='hover:scale-[105%] transition-all w-[32%] p-8 rounded-2xl font-bold text-3xl text-center flex justify-center items-center bg-[#17094b] h-44'>Logo Designing</div>
+        <div className='flex flex-wrap justify-between w-full mb-8 text-3xl font-bold gap-y-8'>
+            <div className='hover:scale-[105%] transition-all w-full md:w-[32%] p-8 rounded-2xl  text-center flex justify-center items-center bg-[#17094b] h-44'>Logo Designing</div>
 
-            <div className='hover:scale-[105%] transition-all  w-[32%] p-8 rounded-2xl font-bold text-3xl text-center flex justify-center items-center bg-[#79d5dd] h-44'>Web & CMS Developent</div>
+            <div className='hover:scale-[105%] transition-all  w-full md:w-[32%] p-8 rounded-2xl  text-center flex justify-center items-center bg-[#79d5dd] h-44'>Web & CMS Developent</div>
 
-            <div className='hover:scale-[105%] transition-all w-[32%] p-8 rounded-2xl font-bold text-3xl text-center flex justify-center items-center bg-[#191e2a] h-44'>Mobile Apps</div>
+            <div className='hover:scale-[105%] transition-all w-full md:w-[32%] p-8 rounded-2xl  text-center flex justify-center items-center bg-[#191e2a] h-44'>Mobile Apps</div>
 
-            <div className='hover:scale-[105%] transition-all w-[32%] p-8 rounded-2xl font-bold text-3xl text-center flex justify-center items-center bg-[#333333] h-44'>Video Animation</div>
+            <div className='hover:scale-[105%] transition-all w-full md:w-[32%] p-8 rounded-2xl  text-center flex justify-center items-center bg-[#333333] h-44'>Video Animation</div>
 
-            <div className='hover:scale-[105%] transition-all w-[32%] p-8 rounded-2xl font-bold text-3xl text-center flex justify-center items-center bg-[#62cdb0] h-44'>Digital Marketing</div>
+            <div className='hover:scale-[105%] transition-all w-full md:w-[32%] p-8 rounded-2xl  text-center flex justify-center items-center bg-[#62cdb0] h-44'>Digital Marketing</div>
 
-            <div className='hover:scale-[105%] transition-all w-[32%] p-8 rounded-2xl font-bold text-3xl text-center flex justify-center items-center bg-[#c4a1b4] h-44'>Coporate Branding</div>
+            <div className='hover:scale-[105%] transition-all w-full md:w-[32%] p-8 rounded-2xl  text-center flex justify-center items-center bg-[#c4a1b4] h-44'>Coporate Branding</div>
         </div>
 
       </div>
 
-      <div className='w-full flex justify center h-[50vh] bg-zinc-950'>
+      <div className='w-full flex justify md:flex-row flex-col center h-[50vh] bg-zinc-950'>
         <div className='flex-1 h-full' 
         style={{
             backgroundImage: `url(${special})`,
@@ -37,8 +37,8 @@ const Special = () => {
 
         }}
         ></div>
-        <div className='flex-1 h-full px-8 py-8 flex flex-col justify-center items-start gap-4   '>
-            <h1 className='font-bold text-4xl '>Let Us Give Your Customers <br/> The Ultimate Web Experience</h1>
+        <div className='flex flex-col items-start justify-center flex-1 h-full gap-4 px-8 py-8 '>
+            <h1 className='text-3xl font-bold sm:text-4xl '>Let Us Give Your Customers <br/> The Ultimate Web Experience</h1>
 
             <p>You and your customers deserve the best, so that is what we promise to deliver. Our experts will make sure that your customers are easily converted to clients.</p>
 

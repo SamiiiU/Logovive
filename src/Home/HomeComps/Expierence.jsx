@@ -42,10 +42,10 @@ const Expierence = () => {
         </div>
 
         {/* Form for contact */}
-        <div className="flex flex-col items-center justify-center w-full gap-4 md:flex-row">
-            <div className="flex flex-col flex-1 px-8 text-center md:text-left md:pl-28 md:px-0">
+        <div className="flex flex-col items-center justify-center w-full gap-y-4 md:flex-row">
+            <div className="flex flex-col px-8 text-center sm:px-16 md:flex-1 md:text-left md:pl-28 md:px-0 ">
 
-            <h1 className="px-3 inline-block w-max font-bold rounded-md bg-gradient-to-r from-[#ef572a] mb-2 to-[#e80e82]">
+            <h1 className="px-3  font-bold rounded-md bg-gradient-to-r from-[#ef572a] mb-2 to-[#e80e82]">
             Contact Us
             </h1>
 
@@ -53,7 +53,7 @@ const Expierence = () => {
 
             <p className='mb-4 font-medium'>Contact us and let us know all your business needs. Our experts will be ensuring that all your online business goals are met.</p>
 
-                <div className='flex w-full gap-8 my-2'>
+                <div className='flex flex-col w-full gap-8 my-2 sm:flex-row'>
                     <input 
                         type='text'
                         className='p-2 bg-transparent border-[1px] flex-1 border-teal-50 outline-none'
@@ -66,7 +66,7 @@ const Expierence = () => {
                     />
                 </div>
 
-                <div className='flex w-full gap-8 my-2'>
+                <div className='flex flex-col w-full gap-8 my-2 sm:flex-row'>
                     <input 
                         type='text'
                         className='p-2 bg-transparent border-[1px] flex-1 border-teal-50 outline-none'
@@ -79,7 +79,7 @@ const Expierence = () => {
                     />
                 </div>
 
-                <div className='flex w-full gap-8 my-2'>
+                <div className='flex flex-col w-full gap-8 my-2 sm:flex-row'>
                     <select 
                         className='p-2 bg-transparent border-[1px] flex-1 border-teal-50 outline-none'
                         >
@@ -112,11 +112,11 @@ const Expierence = () => {
 
                 </p>
 
-                <span className='px-8 rounded-md py-4 border-2 border-[#e80e82] cursor-pointer w-max font-medium uppercase bg-gradient-to-r from-[#ef572a] mb-2 to-[#e80e82]'>Sumbit Request</span>
+                <p className='px-8 rounded-md py-4 border-2 border-[#e80e82] cursor-pointer w-max font-medium uppercase bg-gradient-to-r from-[#ef572a] mb-2 to-[#e80e82]'>Sumbit Request</p>
 
 
             </div>
-            <div className="flex-1 rounded-tl-full "
+            <div className="flex-1 rounded-tl-full w-96 h-96 md:block "
             style={{
                 backgroundImage: `url(${formpic})`,
                 backgroundSize: 'cover',

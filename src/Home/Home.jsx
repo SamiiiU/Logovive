@@ -6,11 +6,14 @@ import Special from './HomeComps/Special'
 import How from './HomeComps/How'
 import Expierence from './HomeComps/Expierence'
 import Footer from '../Common/Footer'
+import SideButtons from '../Common/SideButtons'
 
 const Home = () => {
   return (
     <div className='w-full overflow-x-hidden transition-all'>
+    <SideButtons/>
     <Nav/>
+    
     <Hero/>
     <Partners/>
     <Special/>

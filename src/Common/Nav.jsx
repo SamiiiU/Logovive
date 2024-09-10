@@ -1,9 +1,27 @@
-import React from 'react'
-import Logo from '../Assets/logo.png'
+import React, { useEffect, useState } from 'react'
+import Logo from '../Assets/mern.png'
 
 const Nav = () => {
+
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    // Function to update the screen width
+    const handleResize = () => setScreenWidth(window.innerWidth);
+
+    // Add event listener to track window resize
+    window.addEventListener("resize", handleResize);
+
+    console.log("size yera ",screenWidth)
+
+    // Cleanup event listener on component unmount
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+
   return (
-    <div className='md:flex hidden z-50 text-teal-50 w-full px-20 py-3 bg-[#181818]  justify-between items-center'>
+    <>
+    <div className={`fixed ${screenWidth > 860 ? "flex" : 'hidden'}  z-40 text-teal-50 w-full px-16 lg:px-20 py-3 bg-[#181818]  justify-between items-center`}>
       {/* Logo */}
       <div className='logo w-[15%] h-12 '
       style={{backgroundImage : `url(${Logo})` , backgroundSize : '60%' , backgroundPosition : 'center' , backgroundRepeat : 'no-repeat'}}
@@ -20,14 +38,18 @@ const Nav = () => {
       </div>
 
         {/* Buttons  */}
-        <div className='flex justify-center items-center w-[25%] xl:text-lg text-sm gap-2'>
-            <span className='cursor-pointer flex-1 px-3 py-3 font-bold text-center  bg-gradient-to-r  from-[#ef572a] to-[#e80e82] flex-nowrap'>(210) 920 8689</span>
-            <span className='flex-1 px-4 py-3 font-bold text-center cursor-pointer bg-teal-50 text-blue-950'>Get A Quote</span>
+        <div className='flex items-center justify-center w-auto gap-2 text-sm xl:text-lg'>
+  
+            <span className='cursor-pointer  px-3 py-2 font-bold text-center  bg-gradient-to-r  from-[#ef572a] to-[#e80e82] flex-nowrap'>(210) 920 8689</span>
+            <span className='flex-1 px-2 py-2 font-bold text-center cursor-pointer bg-teal-50 text-blue-950'>Get A Quote</span>
         </div>
 
 
 
       </div>
+      
+      <div className='w-[80%] '></div>
+      </>
 
   )
 }

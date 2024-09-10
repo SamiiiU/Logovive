@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from '../Assets/logo.png'
+import Logo from '../Assets/mern.png'
 
 import { FaPhone } from "react-icons/fa6";
 import { MdOutlineMail } from "react-icons/md";

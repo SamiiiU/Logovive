@@ -3,6 +3,8 @@ import { FaWix } from "react-icons/fa6";
 import manager from '../../Assets/HeroAsset/manager.jpg'
 import { MdOutlineDisplaySettings } from "react-icons/md";
 import offer from '../../Assets/HeroAsset/offer.webp'
+import Cards from '../HomeData/Pricecards'
+import '../Sidebar.css'
 
 
 const Partners = () => {
@@ -146,19 +148,20 @@ const Partners = () => {
 
             </div>
 
-            <div className='flex flex-wrap items-center justify-between w-full gap-y-4 '>
-                <div className='md:w-[33%] sm:w-[45%] w-full py-4 bg-[#222222] hover:scale-[105%] transition-all'>
-                    <div className='flex items-center justify-center w-full py-2 text-2xl font-semibold border-b-2 border-b-teal-50'>Logo Basic Design</div>
+            <div className='relative flex flex-wrap items-center justify-between w-full gap-y-4 '>
+                {Cards.map((item , idx) => (
+                    <div key={idx} className='md:w-[33%] sm:w-[45%] w-full py-4 bg-[#222222] hover:scale-[105%] transition-all'>
+                    <div className='flex items-center justify-center w-full py-2 text-2xl font-semibold border-b-2 border-b-teal-50'>{item.name}</div>
 
-                    <div className='w-full flex justify-center py-4 items-center text-[4rem] font-bold '><span className='text-lg'>$</span>100</div>
+                    <div className='w-full flex justify-center py-4 items-center text-[4rem] font-bold '><span className='text-lg'>$</span>{item.price}</div>
 
-                    <div className='w-full px-8 pb-16 font-[500] text-[1rem]'>
-                        <p>4 Unique Logo Concepts</p>
-                        <p>FREE Icon</p>
-                        <p>4 Unique Logo Concepts</p>
-                        <p>FREE Icon</p>
-                        <p>4 Unique Logo Concepts</p>
-                        <p>FREE Icon</p>
+                    <div className='custom-scrollbar w-full h-40 overflow-y-scroll  px-8 pb-16 font-[500] text-[1rem]'>
+                       {item.package.map((pkg , index) => (
+                        <>
+                         <p key={index}>{pkg}</p>
+                        </>
+                       ))}
+                        
                     </div>
 
                     <div className='flex items-center justify-center w-full py-2 text-lg font-semibold border-y-2 border-teal-50'>speak with us </div>
@@ -169,8 +172,9 @@ const Partners = () => {
                     bg-gradient-to-r  from-[#ef572a] to-[#e80e82] font-semibold'>ORDER NOW</span></div>
 
                 </div> 
+                ))}
 
-                <div className='md:w-[33%] sm:w-[45%] w-full py-4 bg-[#222222] hover:scale-[105%] transition-all'>
+                {/* <div className='md:w-[33%] sm:w-[45%] w-full py-4 bg-[#222222] hover:scale-[105%] transition-all'>
                     <div className='flex items-center justify-center w-full py-2 text-2xl font-semibold border-b-2 border-b-teal-50'>Logo Basic Design</div>
 
                     <div className='w-full flex justify-center py-4 items-center text-[4rem] font-bold '><span className='text-lg'>$</span>100</div>
@@ -283,7 +287,7 @@ const Partners = () => {
                     <div className='flex justify-center w-full py-4 '><span className='absolute px-4 py-2 
                     bg-gradient-to-r  from-[#ef572a] to-[#e80e82] font-semibold'>ORDER NOW</span></div>
 
-                </div>
+                </div> */}
             </div>
 
             

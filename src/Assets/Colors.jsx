@@ -2,7 +2,7 @@ import React from 'react'
 
 const Colors = () => {
   return (
-    <div className='bg-[#181818]'>
+    <div className='bg-[#181818] text-[#ef572a]'>
       
     </div>
   )

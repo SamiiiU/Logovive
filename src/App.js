@@ -1,12 +1,16 @@
-
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from './Home/Home';
-import UnderConstruct from './UnderConstruct';
+import About from './About/About';
+
 
 function App() {
   return (
-    <div className="w-full h-full ">
-     <Home/>
-    </div>
+    <Routes>
+     <Route path="/" element={<Home/>}/>
+     <Route path="/About" element={<About/>}/>
+
+    </Routes>
   );
 }
 

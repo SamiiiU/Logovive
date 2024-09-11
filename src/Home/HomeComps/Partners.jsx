@@ -1,5 +1,10 @@
 import React from 'react'
 import { FaWix } from "react-icons/fa6";
+import { FaShopify } from "react-icons/fa6";
+import { FaAmazon } from "react-icons/fa";
+import { FaXbox } from "react-icons/fa";
+import { FaApple } from "react-icons/fa";
+
 import manager from '../../Assets/HeroAsset/manager.jpg'
 import { MdOutlineDisplaySettings } from "react-icons/md";
 import offer from '../../Assets/HeroAsset/offer.webp'
@@ -11,19 +16,19 @@ const Partners = () => {
   return (
 
     <div className='text-teal-50   w-full py-8 bg-[#181818] '>
-      <div className='flex px-8 mb-16 sm:px-16 md:px-24 '>
-        <h1 className='font-bold md:text-3xl text-2xl w-[20%] flex justify-center items-center '>Our Partners</h1>
+      <div className='flex flex-col flex-wrap px-8 mb-16 sm:px-16 md:px-24 sm:flex-row '>
+        <h1 className='font-bold md:text-3xl text-2xl w-full sm:w-[20%] flex justify-center mb-4  items-center '>Our Partners</h1>
 
-        <div className='w-[80%] sm:text-5xl text-4xl flex items-center'>
+        <div className='sm:w-[80%] w-[100%] sm:text-5xl text-4xl flex items-center '>
             <span className='flex items-center justify-center flex-1 text-center'><FaWix /></span>
 
-            <span className='flex items-center justify-center flex-1 text-center'><FaWix /></span>
+            <span className='flex items-center justify-center flex-1 text-center'><FaAmazon /></span>
 
-            <span className='flex items-center justify-center flex-1 text-center '><FaWix /></span>
+            <span className='flex items-center justify-center flex-1 text-center '><FaXbox /></span>
 
-            <span className='flex items-center justify-center flex-1 text-center'><FaWix  /></span>
+            <span className='flex items-center justify-center flex-1 text-center'><FaShopify  /></span>
 
-            <span className='flex items-center justify-center flex-1 text-center'><FaWix  /></span>
+            <span className='flex items-center justify-center flex-1 text-center'><FaApple  /></span>
 
         </div>
         </div>

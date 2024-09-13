@@ -1,5 +1,5 @@
 import React from "react";
-import glass from '../../Assets/HeroAsset/glass.webp'
+import glass from '../../../Assets/HeroAsset/glass.webp'
 
 const How = () => {
   return (

@@ -28,7 +28,7 @@ const Nav = () => {
 
   return (
     <>
-    <div className={`fixed ${screenWidth > 860 ? "flex" : 'hidden'}  z-40 text-teal-50 w-full px-16 lg:px-20 py-3 bg-[#181818]  justify-between items-center`}>
+    <div className={` ${screenWidth > 860 ? "flex" : 'hidden'}  z-40 text-teal-50 w-full px-16 lg:px-20 py-3 bg-[#181818]  justify-between items-center`}>
       {/* Logo */}
       <div className='logo w-[15%] h-12 '
       style={{backgroundImage : `url(${Logo})` , backgroundSize : '60%' , backgroundPosition : 'center' , backgroundRepeat : 'no-repeat'}}
@@ -39,9 +39,9 @@ const Nav = () => {
         <Link to='/'><h1 className=' font-medium cursor-pointer hover:text-[#ef572a] transition-all'>  Home</h1></Link>
         <Link to='/About'><h1 className=' font-medium cursor-pointer hover:text-[#ef572a] transition-all'> About</h1></Link>
         <h1 className=' font-medium cursor-pointer hover:text-[#ef572a] transition-all'>  Services</h1>
-        <h1 className=' font-medium cursor-pointer hover:text-[#ef572a] transition-all'>  Showcase</h1>
-        <h1 className=' font-medium cursor-pointer hover:text-[#ef572a] transition-all'>  Packages</h1>
-        <h1 className=' font-medium cursor-pointer hover:text-[#ef572a] transition-all'>  Contact</h1>
+        <Link to='/Showcase'><h1 className=' font-medium cursor-pointer hover:text-[#ef572a] transition-all'>Showcase</h1></Link>
+        <Link to='/Package'><h1 className=' font-medium cursor-pointer hover:text-[#ef572a] transition-all'>  Packages</h1></Link>
+        <Link to='/Contact'><h1 className=' font-medium cursor-pointer hover:text-[#ef572a] transition-all'>  Contact</h1></Link>
       </div>
 
         {/* Buttons  */}
@@ -75,10 +75,15 @@ const Nav = () => {
 
         <Link to='/'><h1 className=' font-medium cursor-pointer hover:text-[#ef572a] transition-all'>  Home</h1></Link>
         <Link to='/About'><h1 className=' font-medium cursor-pointer hover:text-[#ef572a] transition-all'> About</h1></Link>
-        <h1 className=' font-medium cursor-pointer hover:text-[#ef572a] transition-all'>  Services</h1>
-        <h1 className=' font-medium cursor-pointer hover:text-[#ef572a] transition-all'>  Showcase</h1>
-        <h1 className=' font-medium cursor-pointer hover:text-[#ef572a] transition-all'>  Packages</h1>
-        <h1 className=' font-medium cursor-pointer hover:text-[#ef572a] transition-all'>  Contact</h1>
+        <Link to='/Showcase'><h1 className=' font-medium cursor-pointer hover:text-[#ef572a] transition-all'> Services</h1></Link>
+
+        <Link to='/Showcase'><h1 className=' font-medium cursor-pointer hover:text-[#ef572a] transition-all'> Showcase</h1></Link>
+
+        <Link to='/Package'><h1 className=' font-medium cursor-pointer hover:text-[#ef572a] transition-all'> Package</h1></Link>
+
+        <Link to='/Contact'><h1 className=' font-medium cursor-pointer hover:text-[#ef572a] transition-all'> Contact</h1></Link>
+        
+
     </div>
     </>
 

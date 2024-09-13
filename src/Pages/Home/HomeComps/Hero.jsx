@@ -1,5 +1,5 @@
 import React from "react";
-import BgHero from "../../Assets/HeroAsset/Herobg.jpg";
+import BgHero from "../../../Assets/HeroAsset/Herobg.jpg";
 
 const Hero = () => {
   return (

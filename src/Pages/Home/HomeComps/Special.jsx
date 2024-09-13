@@ -1,5 +1,5 @@
 import React from 'react'
-import special from '../../Assets/HeroAsset/special.jpg'
+import special from '../../../Assets/HeroAsset/special.jpg'
 
 const Special = () => {
   return (

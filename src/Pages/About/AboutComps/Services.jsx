@@ -13,7 +13,7 @@ const Services = () => {
       <h1 className='md:text-[8em] text-[4em] sm:text-[6em] tracking-tight font-bold'>OUR SERVICES</h1>
 
       {/* sercices items  */}
-      <div className='flex flex-wrap items-start justify-start w-full gap-4 px-8 sm:px-16 xl:px-28'>
+      <div className='flex flex-col items-start justify-start w-full gap-4 px-8 md:flex-row sm:px-16 xl:px-28'>
         {/* service navigation  */}
         <div className='md:w-[40%] w-full cursor-pointer transition-transform  '>
             <p className={`py-3  transition-[1s]  font-semibold uppercase ${serviceType === "Logo Design" ? 'translate-x-0 text-[#ef572a]' : 'translate-x-10 text-teal-50'}`} onClick={() => handleserviceType(
@@ -58,12 +58,9 @@ const Services = () => {
 
             <p>{item.para}</p>
             </div>
-            ) 
-
-            
-        }
-        
-        )}
+            )       
+        }     
+    )}
         </div>
       </div>
 

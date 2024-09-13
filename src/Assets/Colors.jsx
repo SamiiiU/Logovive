@@ -9,3 +9,5 @@ const Colors = () => {
 }
 
 export default Colors
+
+// bg-gradient-to-r  from-[#ef572a]   mb-2 to-[#e80e82]

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Logo from '../Assets/mern.png'
 import { Link } from 'react-router-dom';
 import { AiOutlineMenuFold } from "react-icons/ai";
+import { IoMdArrowDropright } from "react-icons/io";
 
 const Nav = () => {
 
@@ -26,6 +27,25 @@ const Nav = () => {
 
   }
 
+   // State to track visibility
+   const [isVisible, setIsVisible] = useState(false);
+
+   const showMenu = () => {
+    setIsVisible(true);  // Show the child div when mouse enters parent or child
+  };
+
+  const hideMenu = () => {
+    setIsVisible(false); // Hide the child div when mouse leaves both parent and child
+  };
+
+  // State to control dropdown visibility
+  const [isOpen, setIsOpen] = useState(false);
+
+  // Toggle dropdown visibility
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <>
     <div className={` ${screenWidth > 860 ? "flex" : 'hidden'}  z-40 text-teal-50 w-full px-16 lg:px-20 py-3 bg-[#181818]  justify-between items-center`}>
@@ -38,7 +58,42 @@ const Nav = () => {
       <div className='flex items-center justify-center gap-4 px-4 text-sm lg:gap-8 xl:text-[1rem]'>
         <Link to='/'><h1 className=' font-medium cursor-pointer hover:text-[#ef572a] transition-all'>  Home</h1></Link>
         <Link to='/About'><h1 className=' font-medium cursor-pointer hover:text-[#ef572a] transition-all'> About</h1></Link>
-        <h1 className=' font-medium cursor-pointer hover:text-[#ef572a] transition-all'>  Services</h1>
+        <div className=' font-medium cursor-pointer hover:text-[#ef572a] transition-all'
+           onMouseEnter={showMenu}  
+        >
+           <h1> Services</h1>
+           <div className={`animate-fadeUp uppercase z-50 w-[50%] ${isVisible ? 'flex' : 'hidden'} gap-8 justify-between items-start absolute px-8 py-8 bg-[#181818] top-20 right-36 text-teal-50`}
+             onMouseEnter={showMenu}  
+             onMouseLeave={hideMenu}  
+           >
+            <div className='flex flex-col flex-1 text-sm gap-y-4'>
+              <h1 className='mb-4 text-xl'>WEBSITE DESIGN</h1>
+              <p className='w-full py-1 transition-all hover:pl-4 hover:bg-orange-pink'>Design & Development</p>
+              <p className='w-full py-1 transition-all hover:pl-4 hover:bg-orange-pink'>Shopify Website</p>
+              <p className='w-full py-1 transition-all hover:pl-4 hover:bg-orange-pink'>Wordpress Website</p>
+              <p className='w-full py-1 transition-all hover:pl-4 hover:bg-orange-pink'>Wix Website</p>
+              <p className='w-full py-1 transition-all hover:pl-4 hover:bg-orange-pink'>E-commerce Website</p>
+            </div>
+            <div className='flex flex-col flex-1 text-sm gap-y-4'>
+            <h1 className='mb-4 text-xl'>Mobile Applications </h1>
+              <p className='w-full py-1 transition-all hover:pl-4 hover:bg-orange-pink'>IOS APPS</p>
+              <p className='w-full py-1 transition-all hover:pl-4 hover:bg-orange-pink'>Game apps</p>
+              <p className='w-full py-1 transition-all hover:pl-4 hover:bg-orange-pink'>Abdroid apps</p>
+              <p className='w-full py-1 transition-all hover:pl-4 hover:bg-orange-pink'>Hybrid Apps</p>
+
+            </div>
+            <div className='flex flex-col flex-1 text-sm gap-y-4'>
+            <h1 className='mb-4 text-xl'>Marketing</h1>
+              <p className='w-full py-1 transition-all hover:pl-4 hover:bg-orange-pink'>SEO</p>
+              <p className='w-full py-1 transition-all hover:pl-4 hover:bg-orange-pink'>PPC</p>
+              <p className='w-full py-1 transition-all hover:pl-4 hover:bg-orange-pink'>Digital Marketing</p>
+              <p className='w-full py-1 transition-all hover:pl-4 hover:bg-orange-pink'>Content Writing</p>
+            </div>
+
+            </div>
+
+        </div>
+
         <Link to='/Showcase'><h1 className=' font-medium cursor-pointer hover:text-[#ef572a] transition-all'>Showcase</h1></Link>
         <Link to='/Package'><h1 className=' font-medium cursor-pointer hover:text-[#ef572a] transition-all'>  Packages</h1></Link>
         <Link to='/Contact'><h1 className=' font-medium cursor-pointer hover:text-[#ef572a] transition-all'>  Contact</h1></Link>
@@ -60,22 +115,58 @@ const Nav = () => {
       style={{backgroundImage : `url(${Logo})` , backgroundSize : '60%' , backgroundPosition : 'left' , backgroundRepeat : 'no-repeat'}}
       ></div>
 
-      <div className='text-4xl text-teal-50' onClick={handlemenu}>
+      <div className='text-4xl rotate-180 text-teal-50' onClick={handlemenu}>
         <AiOutlineMenuFold/>
       </div>
     </div>
 
-    <div className={`fixed pt-28 text-xl transition-all   z-50 top-0 ${isMenuOpen ? 'left-0' : 'left-[-100%]'} w-[70%] h-full bg-teal-50 text-center`}>
+     <div className={`fixed pt-28 text-xl transition-all bg-   z-50 top-0 ${isMenuOpen ? 'left-0' : 'left-[-100%]'} w-[100%] h-full  bg-zinc-950/70 text-center text-teal-50`}>
 
+      <div className='absolute text-4xl right-6 top-6 text-teal-50' onClick={handlemenu}>
+        <AiOutlineMenuFold/>
+      </div>
 
-        <div className='absolute top-4 left-4  w-[80%] h-20 '
+        <div className='absolute top-4 left-4  w-[50%] h-20 '
         style={{backgroundImage : `url(${Logo})` , backgroundSize : '60%' , backgroundPosition : 'left' , backgroundRepeat : 'no-repeat'}}
         ></div>
 
 
         <Link to='/'><h1 className=' font-medium cursor-pointer hover:text-[#ef572a] transition-all'>  Home</h1></Link>
         <Link to='/About'><h1 className=' font-medium cursor-pointer hover:text-[#ef572a] transition-all'> About</h1></Link>
-        <Link to='/Showcase'><h1 className=' font-medium cursor-pointer hover:text-[#ef572a] transition-all'> Services</h1></Link>
+
+        <div onClick={toggleDropdown} className='relative font-medium cursor-pointer '>
+          <h1>{"Services ->"}</h1>
+          <ul className={`transition-all translate-x-40 text-left duration-300 ease-in-out overflow-hidden ${
+            isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+            }`}>
+            <li>Web Designing
+              <ul className='translate-x-8'>
+                <li>Website </li>
+                <li>Ecommerce Web</li>
+                <li>Shopify</li>
+                <li>Wix Web</li>
+              </ul>
+            </li>
+            
+            <li>App Developement
+              <ul className='translate-x-8'>
+                <li>Android App </li>
+                <li>IOS App </li>
+                <li>Hybrid App </li>
+                <li>Game Apps </li>
+              </ul>
+            </li>
+
+            <li>Marketing
+            <ul className='translate-x-8'>
+                <li>Digital Marketing </li>
+                <li>PPC </li>
+                <li>SEO</li>
+                <li>Content Writing</li>
+              </ul>
+            </li>
+          </ul>
+          </div>
 
         <Link to='/Showcase'><h1 className=' font-medium cursor-pointer hover:text-[#ef572a] transition-all'> Showcase</h1></Link>
 
@@ -85,6 +176,7 @@ const Nav = () => {
         
 
     </div>
+
     </>
 
     

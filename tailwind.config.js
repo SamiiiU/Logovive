@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{html,js,jsx}"],
   theme: {
     extend: {
+      backgroundImage: {
+        'orange-pink': 'linear-gradient(to right, #ef572a, #e80e82)',
+      },
       screens: {
         'xs': '475px',   // Custom screen size for extra small devices
         'sm': '600px',   // Small devices
@@ -13,12 +16,17 @@ module.exports = {
       },
       animation: {
         zigzag: "zig 2s infinite",
+        fadeUp: "fadeUp 500ms linear",
       },
       keyframes: {
         zig: {
           '0%': { transform: 'translateX(-20%)' },
           '50%': { transform: 'translateX(20%)' },
           '100%': { transform: 'translateX(-20%)' },
+        },
+        fadeUp: {
+          '0%': { transform: 'translateY(10%)' },
+          '100%': { transform: 'translateY(0)' },
         },
       },
     },

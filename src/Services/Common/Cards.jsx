@@ -15,7 +15,7 @@ const Cards = () => {
             </div>
 
             <div className='relative flex flex-wrap items-center justify-between w-full gap-y-4 '>
-                {cards.map((item , idx) => (
+                {cards.Logo.map((item , idx) => (
                     <div key={idx} className='md:w-[33%] sm:w-[45%] w-full py-4 bg-[#222222] md:hover:scale-[105%] transition-all'>
                     <div className='flex items-center justify-center w-full py-2 text-lg font-semibold border-b-2 md:text-2xl border-b-teal-50'>{item.name}</div>
 

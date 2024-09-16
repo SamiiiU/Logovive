@@ -22,6 +22,8 @@ const Nav = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+
+
   const handlemenu = () => {
     setMenuOpen(!isMenuOpen);
 
@@ -45,6 +47,36 @@ const Nav = () => {
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
+
+//  Managing scroll behavior 
+  const [isScrollDown, setIsScrollDown] = useState(false); // Scroll state
+  const [lastScrollY, setLastScrollY] = useState(0); // To keep track of the last scroll position
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Get current scroll position
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > lastScrollY) {
+        // If current scroll position is greater than the last, user is scrolling down
+        setIsScrollDown(true);
+      } else {
+        // If current scroll position is less than the last, user is scrolling up
+        setIsScrollDown(false);
+      }
+
+      // Update lastScrollY to the current scroll position
+      setLastScrollY(currentScrollY);
+    };
+
+    // Add scroll event listener
+    window.addEventListener('scroll', handleScroll);
+
+    // Clean up event listener on unmount
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [lastScrollY]); // Re-run the effect if lastScrollY changes
 
   return (
     <>
@@ -107,10 +139,13 @@ const Nav = () => {
 
         </div>
 
+          {/* go to showcase  */}
         <Link to='/Showcase'><h1 className=' font-medium cursor-pointer hover:text-[#ef572a] transition-all'>Showcase</h1></Link>
 
+          {/* go to packages  */}
         <Link to='/Package'><h1 className=' font-medium cursor-pointer hover:text-[#ef572a] transition-all'>  Packages</h1></Link>
 
+          {/* go to contacts  */}
         <Link to='/Contact'><h1 className=' font-medium cursor-pointer hover:text-[#ef572a] transition-all'>  Contact</h1></Link>
       </div>
 
@@ -128,7 +163,7 @@ const Nav = () => {
 
     {/* Started here the nav for small devices  */}
       
-    <div className={`fixed top-0 left-0 ${screenWidth < 860 ? "flex" : 'hidden'} z-40 items-center justify-between w-full px-8 mb-6`}>
+    <div className={`fixed backdrop-blur-sm animate-fadeDownNav top-0 left-0 ${screenWidth < 860 ? "flex" : 'hidden'} ${isScrollDown ? 'hidden' : 'flex'} z-40 items-center justify-between w-full px-8 mb-6`}>
       {/* Logo  */}
       <div className='logo w-[50%] h-20 '
       style={{backgroundImage : `url(${Logo})` , backgroundSize : '60%' , backgroundPosition : 'left' , backgroundRepeat : 'no-repeat'}}

@@ -17,6 +17,9 @@ module.exports = {
       animation: {
         zigzag: "zig 2s infinite",
         fadeUp: "fadeUp 500ms linear",
+        fadeDownNav: "fadeDownNav 500ms linear",
+        fadeRight: "fadeRight 500ms linear",
+        fadeDown: "fadeDown 500ms linear",
       },
       keyframes: {
         zig: {
@@ -25,7 +28,19 @@ module.exports = {
           '100%': { transform: 'translateX(-20%)' },
         },
         fadeUp: {
-          '0%': { transform: 'translateY(10%)' },
+          '0%': { transform: 'translateY(50%)',  opacity : '0' },
+          '100%': { transform: 'translateY(0)' , opacity : '100' },
+        },
+        fadeDown: {
+          '0%': { transform: 'translateY(-100%)' , opacity : '0' },
+          '100%': { transform: 'translateY(0)' , opacity : '100' },
+        },
+        fadeRight: {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(0)' },
+        },
+        fadeDownNav: {
+          '0%': { transform: 'translateY(-100%)' },
           '100%': { transform: 'translateY(0)' },
         },
       },

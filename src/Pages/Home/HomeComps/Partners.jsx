@@ -8,15 +8,19 @@ import { FaApple } from "react-icons/fa";
 import manager from '../../../Assets/HeroAsset/manager.jpg'
 import { MdOutlineDisplaySettings } from "react-icons/md";
 import offer from '../../../Assets/HeroAsset/offer.webp'
-import Cards from '../HomeData/Pricecards'
+import Cards from '../HomeComps/Cards'
 import '../Sidebar.css'
 
 
 const Partners = () => {
+
+
   return (
 
     <div className='text-teal-50   w-full py-8 bg-[#181818] '>
-      <div className='flex flex-col flex-wrap px-8 mb-16 sm:px-16 md:px-24 sm:flex-row '>
+        
+        {/* partners names and logos  */}
+      <div className='flex flex-col flex-wrap px-8 mb-16 sm:px-16 md:px-24 sm:flex-row animate-fadeUp'>
         <h1 className='font-bold md:text-3xl text-2xl w-full sm:w-[20%] flex justify-center mb-4  items-center '>Our Partners</h1>
 
         <div className='sm:w-[80%] w-[100%] sm:text-5xl text-4xl flex items-center '>
@@ -34,81 +38,82 @@ const Partners = () => {
         </div>
         
 
-      {/* About us starting............. */}
+        {/* About us starting............. */}
 
-      <div className='flex gap-6 w-full my-8  xl:h-[80vh]  justify-center items-center'>
-            <div
-            className="md:relative absolute md:left-0 left-[-100%] block md:w-[40%] w-0 p-8 xl:h-full md:h-[26em] h-0"
-            style={{
-                backgroundImage: `url(${manager})`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                backgroundRepeat: 'no-repeat',
-                clipPath: 'polygon(20% 0%, 330% 0%, 100% 80%, 50% 100%, 0% 80%, 0% 20%)',
-            }}
-            >
-            
-            </div>
+        <div className='flex gap-6 w-full my-8  xl:h-[80vh]  justify-center items-center'>
+                <div
+                className="md:relative absolute md:left-0 left-[-100%] block md:w-[40%] w-0 p-8 xl:h-full md:h-[26em] h-0"
+                style={{
+                    backgroundImage: `url(${manager})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    backgroundRepeat: 'no-repeat',
+                    clipPath: 'polygon(20% 0%, 330% 0%, 100% 80%, 50% 100%, 0% 80%, 0% 20%)',
+                }}
+                >
+                
+                </div>
 
-            <div className='flex  md:w-[60%] w-full flex-col md:items-start items-center xl:pr-16 md:pr-8 sm:px-16 px-8'>
-                <h1 className='px-3 font-bold rounded-md bg-gradient-to-r  from-[#ef572a]  mb-2 to-[#e80e82]'>About Us</h1>
-                <h1 className='mb-8 text-4xl font-bold text-center xl:text-5xl md:text-left '>We Transform Businesses Into Brands</h1>
+                <div className='flex  md:w-[60%] w-full flex-col md:items-start items-center xl:pr-16 md:pr-8 sm:px-16 px-8'>
+                    <h1 className='px-3 font-bold rounded-md bg-gradient-to-r  from-[#ef572a]  mb-2 to-[#e80e82]'>About Us</h1>
+                    <h1 className='mb-8 text-4xl font-bold text-center xl:text-5xl md:text-left '>We Transform Businesses Into Brands</h1>
 
-                <p className='font-semibold leading-5'>Our experts are known for branding common businesses into brands. When your business is online you too have the power to reach customers all around the world. We will make sure that there is a worldwide audience waiting for your products.</p>
-
-
-                {/* 3 box icons  */}
-                <div className='flex flex-col items-center justify-between mb-10 md:flex-row'>
-                <div className='flex-1 px-4'>
-                    <div className='flex justify-center py-4 text-center'><MdOutlineDisplaySettings className='text-[3em] text-[#684af4]'/></div>
-                    <h1 className='text-[#f89521] leading-none font-bold text-xl my-4 text-center'>
-                    SOLUTION DEVELOPMENT    
-
-                    </h1>
-
-                    <p className='text-center '>
-
-                    We make sure that you get a digital solution equipped with all your business needs.
-                    </p>
-                    </div>
+                    <p className='font-semibold leading-5'>Our experts are known for branding common businesses into brands. When your business is online you too have the power to reach customers all around the world. We will make sure that there is a worldwide audience waiting for your products.</p>
 
 
-                    <div className='flex-1 px-4 '>
-                    <div className='flex justify-center w-full py-4 text-center -800'><MdOutlineDisplaySettings className='text-[3em] text-[#ef572a]'/></div>
-                    <h1 className='text-[#f89521] leading-none font-bold text-xl my-4 text-center'>
-                    AUDIENCE TARGETING
-
-                    </h1>
-
-                    <p className='text-center '>
-
-                    The people who are already looking for your products online are your targeted audience.
-                    </p>
-                    </div>
-             
-
+                    {/* 3 box icons  */}
+                    <div className='flex flex-col items-center justify-between mb-10 md:flex-row'>
                     <div className='flex-1 px-4'>
-                    <div className='flex justify-center w-full py-4 text-center'><MdOutlineDisplaySettings className='text-[3em] text-[#28afa3]'/></div>
-                    <h1 className='text-[#f89521] leading-none font-bold text-xl my-4 text-center'>
-                    MARKETING PERFORMANCE
+                        <div className='flex justify-center py-4 text-center'><MdOutlineDisplaySettings className='text-[3em] text-[#684af4]'/></div>
+                        <h1 className='text-[#f89521] leading-none font-bold text-xl my-4 text-center'>
+                        SOLUTION DEVELOPMENT    
 
-                    </h1>
+                        </h1>
 
-                    <p className='text-center '>
+                        <p className='text-center '>
 
-                    Our experts know how to make your site perform exceptionally through effective marketing.
-                    </p>
+                        We make sure that you get a digital solution equipped with all your business needs.
+                        </p>
+                        </div>
+
+
+                        <div className='flex-1 px-4 '>
+                        <div className='flex justify-center w-full py-4 text-center -800'><MdOutlineDisplaySettings className='text-[3em] text-[#ef572a]'/></div>
+                        <h1 className='text-[#f89521] leading-none font-bold text-xl my-4 text-center'>
+                        AUDIENCE TARGETING
+
+                        </h1>
+
+                        <p className='text-center '>
+
+                        The people who are already looking for your products online are your targeted audience.
+                        </p>
+                        </div>
+                
+
+                        <div className='flex-1 px-4'>
+                        <div className='flex justify-center w-full py-4 text-center'><MdOutlineDisplaySettings className='text-[3em] text-[#28afa3]'/></div>
+                        <h1 className='text-[#f89521] leading-none font-bold text-xl my-4 text-center'>
+                        MARKETING PERFORMANCE
+
+                        </h1>
+
+                        <p className='text-center '>
+
+                        Our experts know how to make your site perform exceptionally through effective marketing.
+                        </p>
+                        </div>
+
                     </div>
 
+                    <div className='flex justify-center items-center w-full sm:w-[60%] sm:px-0 px-4  gap-2'>
+                        <span className='flex-1 px-3 py-3 font-bold text-center  bg-gradient-to-r  from-[#ef572a] to-[#e80e82] border-2 border-[#e80e82] flex-nowrap cursor-pointer'>Read More</span>
+                        <span className='flex-1 px-4 cursor-pointer py-3 border-2 border-[#ef572a] bg-transparent text-[#ef572a] font-bold text-center'>Get A Quote</span>
+                    </div>
                 </div>
 
-                <div className='flex justify-center items-center w-[60%]  gap-2'>
-                    <span className='flex-1 px-3 py-3 font-bold text-center  bg-gradient-to-r  from-[#ef572a] to-[#e80e82] border-2 border-[#e80e82] flex-nowrap'>Read More</span>
-                    <span className='flex-1 px-4 py-3 border-2 border-[#ef572a] bg-transparent text-[#ef572a] font-bold text-center'>Get A Quote</span>
-                </div>
             </div>
 
-        </div>
 
         {/* Choosing plan  */}
         <div className='flex flex-col items-center justify-center w-full px-8 py-4 mt-16 mb-8 gap-y-4 sm:flex-row sm:px-16 xl:items-end xl:px-28'>
@@ -121,69 +126,11 @@ const Partners = () => {
 
         </div>
 
-        <div className='w-full px-8 py-4 sm:px-16 xl:px-28'>
-            <div className='flex flex-col items-center justify-between w-full my-5 gap-y-4 sm:flex-row xl:text-lg'>
 
-                <div className='flex justify-between w-full'>
-                    <h1 className=' flex-1 font-medium cursor-pointer hover:text-[#ef572a] transition-all'>  Logo Design</h1>
-                    <h1 className=' flex-1 font-medium cursor-pointer hover:text-[#ef572a] transition-all'>  Website</h1>
-                    <h1 className=' flex-1 font-medium cursor-pointer hover:text-[#ef572a] transition-all'>  Video</h1>
-                    <h1 className=' flex-1 font-medium cursor-pointer hover:text-[#ef572a] transition-all'>  Print Design</h1>
-                </div>
-                
-                <div className='flex justify-between w-full'>
-                    <h1 className='flex-1 font-medium cursor-pointer hover:text-[#ef572a] transition-all'>  Branding</h1>
-                    
-                    <h1 className='flex-1 font-medium cursor-pointer hover:text-[#ef572a] transition-all'>  Ecommerce </h1>
 
-                    <h1 className='flex-1 font-medium cursor-pointer hover:text-[#ef572a] transition-all'>  SEO</h1>
+        {/* cards start here  */}
 
-                    <h1 className='flex-1 font-medium cursor-pointer hover:text-[#ef572a] transition-all'>  Combo Packages </h1>
-                </div>
-                
-            </div>
-
-            <div className='flex flex-col items-end justify-center w-full py-4 mb-8 text-3xl gap-y-4 sm:flex-row lg:text-4xl'>
-            <div className= "sm:w-[40%] w-full ">
-                <h1 className=' font-bold text-[#f89521] my-2'>Pricing Plans</h1>
-                <h1 className='font-bold '>that Work for You!</h1>
-            </div>
-
-            <h1 className='lg:text-2xl text-xl sm:w-[60%] w-full leading-9'>Ready to get started? Experience the industry’s best design deals structured according to your business needs.</h1>
-
-            </div>
-
-            <div className='relative flex flex-wrap items-center justify-between w-full gap-y-4 '>
-                {Cards.map((item , idx) => (
-                    <div key={idx} className='md:w-[33%] sm:w-[45%] w-full py-4 bg-[#222222] md:hover:scale-[105%] transition-all'>
-                    <div className='flex items-center justify-center w-full py-2 text-lg font-semibold border-b-2 md:text-2xl border-b-teal-50'>{item.name}</div>
-
-                    <div className='w-full flex justify-center py-4 items-center text-xl md:text-[4rem] font-bold my-2'><span className='text-lg'>$</span>{item.price}</div>
-
-                    <div className='custom-scrollbar w-full h-40 overflow-y-scroll  px-8 pb-16 font-[500] text-xs md:text-sm'>
-                       {item.package.map((pkg , index) => (
-                        <>
-                         <p key={index}>{pkg}</p>
-                        </>
-                       ))}
-                        
-                    </div>
-
-                    <div className='flex items-center justify-center w-full py-2 text-lg font-semibold border-y-2 border-teal-50'>speak with us </div>
-                    <div className='flex items-center justify-center w-full text-lg font-semibold '>adas</div>
-                    
-
-                    <div className='flex justify-center w-full py-4 '><span className='absolute px-4 py-2 
-                    bg-gradient-to-r  from-[#ef572a] to-[#e80e82] font-semibold'>ORDER NOW</span></div>
-
-                </div> 
-                ))}
-
-            </div>
-
-            
-
-        </div>
+        <Cards/>
 
         <div className='w-full md:px-24 px-8 sm:px-16 flex  justify-center items-center py-8 mt-16 bg-gradient-to-t from-[#ef572a] to-[#ef572a]/10'>
             <div className='w-full p-4 border-2 border-dashed rounded-xl border-teal-50 '>

@@ -1,6 +1,7 @@
 
 
-const cards = {
+
+export const packageData = {
     Logo : [{
         id : 1 ,
         name : "Logo Basic Design",
@@ -407,6 +408,4 @@ const cards = {
         
     ]
 }
-
-
-export default cards;
+    

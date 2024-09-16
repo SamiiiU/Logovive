@@ -151,7 +151,7 @@ export const packageData = {
         {
             id : 1 ,
             name : "Basic Web",
-            price : "199",
+            price : "221",
             package : [
                 "4 Unique Logo Concepts" ,
                 "FREE Icon",
@@ -164,7 +164,7 @@ export const packageData = {
         {
             id : 2,
             name : "Startup Web",
-            price : "499",
+            price : "320",
             package : [
                 "12 Unique Logo Concepts",
                 "FREE Icon",
@@ -179,7 +179,7 @@ export const packageData = {
         {
             id : 3 ,
             name : "Professional Web",
-            price : "799",
+            price : "770",
             package : [
                 "Infinite Logo Concepts" ,
                 "FREE Icon",
@@ -195,7 +195,7 @@ export const packageData = {
         {
             id : 4 ,
             name : "Identity Web",
-            price : "1999",
+            price : "1130",
             package : [
                 "2 Unique 3D logo Concepts" ,
                 "3D Effect through lights & shades",
@@ -208,7 +208,7 @@ export const packageData = {
         {
             id : 5 ,
             name : "Elite Web",
-            price : "1799",
+            price : "2192",
             package : [
                 "2 Unique 3D logo Concepts" ,
                 "3D Effect through lights & shades",
@@ -220,7 +220,7 @@ export const packageData = {
         },
         {
             id : 6  ,
-            name : "Business Web",
+            name : "5324",
             price : "2499",
             package : [
                 "2 Unique 3D logo Concepts" ,

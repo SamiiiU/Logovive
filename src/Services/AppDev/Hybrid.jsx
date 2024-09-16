@@ -20,7 +20,6 @@ const Hybrid = () => {
     <SideButtons/>
     <Hero name={android[3].name} head = {android[3].heading} para={android[3].paragraph} image={android[3].image} />
     <Intro heading={android[3].introHead} para={android[3].introPara} image={android[3].introImage}/>
-    <Cards/>
     <Portfolio idx={3}/>
     <Experience/>
     <Contact/>

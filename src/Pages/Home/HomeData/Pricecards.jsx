@@ -150,7 +150,7 @@ const cards = {
         {
             id : 1 ,
             name : "Basic Web",
-            price : "199",
+            price : "221",
             package : [
                 "4 Unique Logo Concepts" ,
                 "FREE Icon",
@@ -163,7 +163,7 @@ const cards = {
         {
             id : 2,
             name : "Startup Web",
-            price : "499",
+            price : "320",
             package : [
                 "12 Unique Logo Concepts",
                 "FREE Icon",
@@ -178,7 +178,7 @@ const cards = {
         {
             id : 3 ,
             name : "Professional Web",
-            price : "799",
+            price : "770",
             package : [
                 "Infinite Logo Concepts" ,
                 "FREE Icon",
@@ -194,7 +194,7 @@ const cards = {
         {
             id : 4 ,
             name : "Identity Web",
-            price : "1999",
+            price : "1130",
             package : [
                 "2 Unique 3D logo Concepts" ,
                 "3D Effect through lights & shades",
@@ -207,7 +207,7 @@ const cards = {
         {
             id : 5 ,
             name : "Elite Web",
-            price : "1799",
+            price : "2192",
             package : [
                 "2 Unique 3D logo Concepts" ,
                 "3D Effect through lights & shades",
@@ -220,7 +220,7 @@ const cards = {
         {
             id : 6  ,
             name : "Business Web",
-            price : "2499",
+            price : "5324",
             package : [
                 "2 Unique 3D logo Concepts" ,
                 "3D Effect through lights & shades",
@@ -402,6 +402,141 @@ const cards = {
                 "AI, PSD, EPS, GIF, BMP, JPEG PNG Formats",
                 "Free Rush Delivery" ,
                 "Get Initial Concepts within 24 hours",
+            ],   
+        },
+        
+    ],
+
+    DigitalM : [
+        {
+            id : 1 ,
+            name : "BASIC",
+            price : "150",
+            package : [
+                "4 Unique Logo Concepts" ,
+                "FREE Icon",
+                "Unlimited Revisions" ,
+                "AI, PSD, EPS, GIF, BMP, JPEG PNG Formats",
+                "Free Rush Delivery" ,
+                "Get Initial Concepts within 24 hours",
+            ],   
+        },
+        {
+            id : 2,
+            name : "STARTUP",
+            price : "199",
+            package : [
+                "12 Unique Logo Concepts",
+                "FREE Icon",
+                "Unlimited Revisions" ,
+                "AI, PSD, EPS, GIF, BMP, JPEG PNG Formats",
+                "Sationary Design" ,
+                "(Business Card Letterhead, Envelope)",
+    
+    
+            ],   
+        },
+        {
+            id : 3 ,
+            name : "PROFESSIONAL",
+            price : "949",
+            package : [
+                "Infinite Logo Concepts" ,
+                "FREE Icon",
+                "Unlimited Revisions" ,
+                "AI, PSD, EPS, GIF, BMP, JPEG PNG Formats",
+                "Free Rush Delivery" ,
+                "(Business Card Letterhead, Envelope)",
+                "Printing",
+                "FREE 500 Business Cards Prints",
+    
+            ],   
+        },
+        {
+            id : 4 ,
+            name : "ELITE",
+            price : "499",
+            package : [
+                "2 Unique 3D logo Concepts" ,
+                "3D Effect through lights & shades",
+                "Unlimited Revisions" ,
+                "AI, PSD, EPS, GIF, BMP, JPEG PNG Formats",
+                "Free Rush Delivery" ,
+                "Get Initial Concepts within 24 hours",
+            ],   
+        },
+        {
+            id : 5 ,
+            name : "BUSINESS",
+            price : "799",
+            package : [
+                "2 Unique 3D logo Concepts" ,
+                "3D Effect through lights & shades",
+                "Unlimited Revisions" ,
+                "AI, PSD, EPS, GIF, BMP, JPEG PNG Formats",
+                "Free Rush Delivery" ,
+                "Get Initial Concepts within 24 hours",
+            ],   
+        },
+        {
+            id : 6 ,
+            name : "CUSTOM",
+            price : "",
+            package : [
+                "2 Unique 3D logo Concepts" ,
+                "3D Effect through lights & shades",
+                "Unlimited Revisions" ,
+                "AI, PSD, EPS, GIF, BMP, JPEG PNG Formats",
+                "Free Rush Delivery" ,
+                "Get Initial Concepts within 24 hours",
+            ],   
+        },
+        
+    ],
+
+    SEO : [
+        {
+            id : 1 ,
+            name : "BASIC SEO",
+            price : "1700",
+            package : [
+                "4 Unique Logo Concepts" ,
+                "FREE Icon",
+                "Unlimited Revisions" ,
+                "AI, PSD, EPS, GIF, BMP, JPEG PNG Formats",
+                "Free Rush Delivery" ,
+                "Get Initial Concepts within 24 hours",
+            ],   
+        },
+        {
+            id : 2,
+            name : "PREMIUM SEO",
+            price : "3588",
+            package : [
+                "12 Unique Logo Concepts",
+                "FREE Icon",
+                "Unlimited Revisions" ,
+                "AI, PSD, EPS, GIF, BMP, JPEG PNG Formats",
+                "Sationary Design" ,
+                "(Business Card Letterhead, Envelope)",
+    
+    
+            ],   
+        },
+        {
+            id : 3 ,
+            name : "PLATINUM SEO",
+            price : "6200",
+            package : [
+                "Infinite Logo Concepts" ,
+                "FREE Icon",
+                "Unlimited Revisions" ,
+                "AI, PSD, EPS, GIF, BMP, JPEG PNG Formats",
+                "Free Rush Delivery" ,
+                "(Business Card Letterhead, Envelope)",
+                "Printing",
+                "FREE 500 Business Cards Prints",
+    
             ],   
         },
         

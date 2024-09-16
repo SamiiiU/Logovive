@@ -23,8 +23,8 @@ const SEO = () => {
     <SideButtons/>
     <Hero name={marketing[1].name} head = {marketing[1].heading} para={marketing[1].paragraph} image={marketing[1].image} />
     <Intro heading={marketing[1].introHead} para={marketing[1].introPara} image={marketing[1].introImage}/>
-    <Cards/>
-    <Portfolio idx={0}/>
+    <Cards type={"SEO"}/>
+
     <Experience/>
     <Contact/>
     <Footer/>

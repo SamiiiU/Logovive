@@ -21,7 +21,7 @@ const DigitalMarketing = () => {
     <SideButtons/>
     <Hero name={marketing[0].name} head = {marketing[0].heading} para={marketing[0].paragraph} image={marketing[0].image} />
     <Intro heading={marketing[0].introHead} para={marketing[0].introPara} image={marketing[0].introImage}/>
-    <Cards/>
+    <Cards type={"digital"}/>
     <Portfolio idx={0}/>
     <Experience/>
     <Contact/>

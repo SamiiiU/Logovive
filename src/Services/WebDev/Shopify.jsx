@@ -8,6 +8,7 @@ import Intro from '../Common/Intro'
 import Portfolio from '../Common/Portfolio'
 import Experience from '../../Pages/Home/HomeComps/Expierence'
 import Contact from '../../Common/ContactForm'
+import Cards from '../Common/Cards'
 
 
 const Shopify = () => {
@@ -23,6 +24,7 @@ const Shopify = () => {
         <SideButtons/>
         <Hero name={Webdev[1].name} head = {Webdev[1].heading} para={Webdev[1].paragraph} image={Webdev[1].image} />
         <Intro heading={Webdev[1].introHead} para={Webdev[1].introPara} image={Webdev[1].introImage}/>
+        <Cards type={"Shopify"}/>
         <Portfolio idx={1}/>
         <Experience/>
         <Contact/>

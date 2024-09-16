@@ -2,15 +2,15 @@ import React, { useEffect, useState } from 'react'
 import {packageData} from '../../Packages/PackagesData'
 const Cards = () => {
     const [cards , setType] = useState(packageData.Logo)
-
-    console.log(cards)
-
     const handleCards = (e) => {
         const currId = e.target.id
+        
+        
         switch (currId) {
 
             case "1":
                 setType(packageData.Logo)
+                
                 break;
              
             case "2":
@@ -53,7 +53,7 @@ const Cards = () => {
 
                 {cards.map((item , idx) => (
                     <div key={idx} className='md:w-[33%] sm:w-[45%] w-full py-4 bg-[#222222] md:hover:scale-[105%] transition-all'>
-                    <div className='flex items-center justify-center w-full py-2 text-lg font-semibold border-b-2 md:text-2xl border-b-teal-50'>{item.name}</div>
+                    <div className='flex items-center justify-center w-full py-2 text-lg font-semibold text-center border-b-2 md:text-2xl border-b-teal-50'>{item.name} <br/> Package</div>
 
                     <div className='w-full flex justify-center py-4 items-center text-5xl md:text-[4rem] font-bold my-2'><span className='text-lg'>$</span>{item.price}</div>
 

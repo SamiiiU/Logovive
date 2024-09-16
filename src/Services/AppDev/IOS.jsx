@@ -23,7 +23,6 @@ const IOS = () => {
     <SideButtons/>
     <Hero name={android[0].name} head = {android[0].heading} para={android[0].paragraph} image={android[0].image} />
     <Intro heading={android[0].introHead} para={android[0].introPara} image={android[0].introImage}/>
-    <Cards/>
     <Portfolio idx={0}/>
     <Experience/>
     <Contact/>

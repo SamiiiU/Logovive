@@ -21,7 +21,7 @@ const Game = () => {
     <SideButtons/>
     <Hero name={android[1].name} head = {android[1].heading} para={android[1].paragraph} image={android[1].image} />
     <Intro heading={android[1].introHead} para={android[1].introPara} image={android[1].introImage}/>
-    <Cards/>
+  
     <Portfolio idx={1}/>
     <Experience/>
     <Contact/>

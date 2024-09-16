@@ -22,7 +22,7 @@ const WebDev = () => {
         <SideButtons/>
         <Hero name={Webdev[0].name} head = {Webdev[0].heading} para={Webdev[0].paragraph} image={Webdev[0].image} />
         <Intro heading={Webdev[0].introHead} para={Webdev[0].introPara} image={Webdev[0].introImage}/>
-        <Cards/>
+        <Cards type={"Web"}/>
         <Portfolio idx={0}/>
         <Experience/>
         <Contact/>

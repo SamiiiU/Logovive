@@ -8,6 +8,14 @@ import shopifIntro from '../../Assets/Services/WebDev/shopifyIntro.png'
 import wordpressIntro from '../../Assets/Services/WebDev/wordpressIntro.png'
 import wixIntro from '../../Assets/Services/WebDev/wixIntro.png'
 
+import img1 from '../../Assets/Services/webPortfolio/1.jpg'
+import img2 from '../../Assets/Services/webPortfolio/2.jpg'
+import img3 from '../../Assets/Services/webPortfolio/3.jpg'
+import img4 from '../../Assets/Services/webPortfolio/4.jpg'
+import img5 from '../../Assets/Services/webPortfolio/5.jpg'
+import img6 from '../../Assets/Services/webPortfolio/6.jpg'
+
+
 
 export const Webdev = [
     {id : 0 ,
@@ -22,7 +30,7 @@ export const Webdev = [
         introImage : webIntro,
 
         portfolo : [
-            1 , 2 ,3 ,4 ,5 ,6
+            img1 , img2 ,img3 , img4  , img5 , img6
         ]
 
        
@@ -43,7 +51,7 @@ export const Webdev = [
         introImage : shopifIntro,
 
         portfolo : [
-            1 , 2 ,3 ,4 ,5 ,6
+            img1 , img2 ,img3 , img4  , img5 , img6
         ]
     },
     {id : 2 ,
@@ -60,7 +68,7 @@ export const Webdev = [
         introImage : wordpressIntro,
 
         portfolo : [
-            1 , 2 ,3 ,4 ,5 ,6
+            img1 , img2 ,img3 , img4  , img5 , img6
         ]
     },
     {id : 3 ,
@@ -77,7 +85,7 @@ export const Webdev = [
         introImage : wixIntro,
 
         portfolo : [
-            1 , 2 ,3 ,4 ,5 ,6
+            img1 , img2 ,img3 , img4  , img5 , img6
         ]
 
     },
@@ -94,7 +102,7 @@ export const Webdev = [
         introImage : webIntro,
 
         portfolo : [
-            1 , 2 ,3 ,4 ,5 ,6
+            img1 , img2 ,img3 , img4  , img5 , img6
         ]
     },
 

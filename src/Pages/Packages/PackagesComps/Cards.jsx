@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import {packageData} from '../PackagesData'
 const Cards = () => {
     const [cards , setType] = useState(packageData.Logo)
+    const [previousElement, setPreviousElement] = useState(null);
 
     const handleCards = (e) => {
         const currId = e.target.id
@@ -31,18 +32,53 @@ const Cards = () => {
                 break;
         }
 
+                // Define gradient classes as an array
+        const gradientClasses = ['bg-gradient-to-r', 'from-[#ef572a]', 'to-[#e80e82]'];
         
+        let selectedId = e.target.id; // Get the id of the clicked element
+        let selectedElement = document.getElementById(selectedId); // Select the element by its id
 
-    }
+        // Remove the gradient classes from the previous element if it exists
+        if (previousElement) {
+            previousElement.classList.remove(...gradientClasses); // Spread operator to pass each class separately
+        }
+
+        // Add the gradient classes to the new selected element
+        if (selectedElement) {
+            selectedElement.classList.add(...gradientClasses); // Spread operator to pass each class separately
+            setPreviousElement(selectedElement); // Set the new element as the previous one
+        }
+            }
+
+    
+
+const ChangeShow = (e) => {
+  // Define gradient classes as an array
+  const gradientClasses = ['bg-gradient-to-r', 'from-[#ef572a]', 'to-[#e80e82]'];
+  
+  let selectedId = e.target.id; // Get the id of the clicked element
+  let selectedElement = document.getElementById(selectedId); // Select the element by its id
+
+  // Remove the gradient classes from the previous element if it exists
+  if (previousElement) {
+    previousElement.classList.remove(...gradientClasses); // Spread operator to pass each class separately
+  }
+
+  // Add the gradient classes to the new selected element
+  if (selectedElement) {
+    selectedElement.classList.add(...gradientClasses); // Spread operator to pass each class separately
+    setPreviousElement(selectedElement); // Set the new element as the previous one
+  }
+};
   return (
     <div className='w-full px-8 py-12 sm:px-16 xl:px-28 bg-[#181818] text-teal-50 '>
             <div className='flex flex-wrap items-center justify-center w-full py-8 gap-x-16 gap-y-4 xl:text-lg'>
 
-                <h1 className='px-3 py-1 font-bold bg-gradient-to-r  from-[#ef572a]   to-[#e80e82] cursor-pointer rounded-md' id='1' onClick={handleCards}>  Logo Design</h1>
-                <h1 className='px-3 py-1 font-bold bg-gradient-to-r  from-[#ef572a]   to-[#e80e82] cursor-pointer rounded-md' id='2' onClick={handleCards}>  Website</h1>
-                <h1 className='px-3 py-1 font-bold bg-gradient-to-r  from-[#ef572a]   to-[#e80e82] cursor-pointer rounded-md' id='3' onClick={handleCards}>  Wordpress</h1>
-                <h1 className='px-3 py-1 font-bold bg-gradient-to-r  from-[#ef572a]   to-[#e80e82] cursor-pointer rounded-md' id='4' onClick={handleCards}>  Ecommerces</h1>
-                <h1 className='px-3 py-1 font-bold bg-gradient-to-r  from-[#ef572a]   to-[#e80e82] cursor-pointer rounded-md' id='5' onClick={handleCards}>  Shopify</h1>
+                <h1 className='px-3 py-1 font-bold rounded-md cursor-pointer' id='1' onClick={handleCards}>  Logo Design</h1>
+                <h1 className='px-3 py-1 font-bold rounded-md cursor-pointer' id='2' onClick={handleCards}>  Website</h1>
+                <h1 className='px-3 py-1 font-bold rounded-md cursor-pointer' id='3' onClick={handleCards}>  Wordpress</h1>
+                <h1 className='px-3 py-1 font-bold rounded-md cursor-pointer' id='4' onClick={handleCards}>  Ecommerces</h1>
+                <h1 className='px-3 py-1 font-bold rounded-md cursor-pointer' id='5' onClick={handleCards}>  Shopify</h1>
                 
             </div>
 

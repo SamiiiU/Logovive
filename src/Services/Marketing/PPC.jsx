@@ -23,7 +23,6 @@ const SEO = () => {
     <Hero name={marketing[2].name} head = {marketing[2].heading} para={marketing[2].paragraph} image={marketing[2].image} />
     <Intro heading={marketing[2].introHead} para={marketing[2].introPara} image={marketing[2].introImage}/>
     <Cards/>
-    <Portfolio idx={0}/>
     <Experience/>
     <Contact/>
     <Footer/>

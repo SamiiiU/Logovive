@@ -24,8 +24,9 @@ const Contact = () => {
                 <p >4659 Penelope Ln, Plano, TX 75024</p>
             </div>
             <div className='flex-1'>
-                <h1 className='font-semibold'>Adress</h1>
-                <p>4659 Penelope Ln, Plano, TX 75024</p>
+                <h1 className='font-semibold'>Email Address</h1>
+                <p>info@logovive.com
+                </p>
             </div>
         </div>
 

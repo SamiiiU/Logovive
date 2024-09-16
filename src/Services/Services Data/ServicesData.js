@@ -1,7 +1,7 @@
 
 
 
-export const serVicesData = {
+const serVicesData = {
     Logo : [{
         id : 1 ,
         name : "Logo Basic Design",
@@ -406,6 +406,96 @@ export const serVicesData = {
             ],   
         },
         
+    ],
+
+    
+    DigitalM : [
+        {
+            id : 1 ,
+            name : "BASIC PACKAGE",
+            price : "150",
+            package : [
+                "4 Unique Logo Concepts" ,
+                "FREE Icon",
+                "Unlimited Revisions" ,
+                "AI, PSD, EPS, GIF, BMP, JPEG PNG Formats",
+                "Free Rush Delivery" ,
+                "Get Initial Concepts within 24 hours",
+            ],   
+        },
+        {
+            id : 2,
+            name : "STARTUP PACKAGE",
+            price : "199",
+            package : [
+                "12 Unique Logo Concepts",
+                "FREE Icon",
+                "Unlimited Revisions" ,
+                "AI, PSD, EPS, GIF, BMP, JPEG PNG Formats",
+                "Sationary Design" ,
+                "(Business Card Letterhead, Envelope)",
+    
+    
+            ],   
+        },
+        {
+            id : 3 ,
+            name : "PROFESSIONAL PACKAGE",
+            price : "949",
+            package : [
+                "Infinite Logo Concepts" ,
+                "FREE Icon",
+                "Unlimited Revisions" ,
+                "AI, PSD, EPS, GIF, BMP, JPEG PNG Formats",
+                "Free Rush Delivery" ,
+                "(Business Card Letterhead, Envelope)",
+                "Printing",
+                "FREE 500 Business Cards Prints",
+    
+            ],   
+        },
+        {
+            id : 4 ,
+            name : "ELITE PACKAGE",
+            price : "499",
+            package : [
+                "2 Unique 3D logo Concepts" ,
+                "3D Effect through lights & shades",
+                "Unlimited Revisions" ,
+                "AI, PSD, EPS, GIF, BMP, JPEG PNG Formats",
+                "Free Rush Delivery" ,
+                "Get Initial Concepts within 24 hours",
+            ],   
+        },
+        {
+            id : 5 ,
+            name : "BUSINESS PACKAGE",
+            price : "799",
+            package : [
+                "2 Unique 3D logo Concepts" ,
+                "3D Effect through lights & shades",
+                "Unlimited Revisions" ,
+                "AI, PSD, EPS, GIF, BMP, JPEG PNG Formats",
+                "Free Rush Delivery" ,
+                "Get Initial Concepts within 24 hours",
+            ],   
+        },
+        {
+            id : 6 ,
+            name : "CUSTOM",
+            price : "",
+            package : [
+                "2 Unique 3D logo Concepts" ,
+                "3D Effect through lights & shades",
+                "Unlimited Revisions" ,
+                "AI, PSD, EPS, GIF, BMP, JPEG PNG Formats",
+                "Free Rush Delivery" ,
+                "Get Initial Concepts within 24 hours",
+            ],   
+        },
+        
     ]
 }
-    
+
+
+export default serVicesData;

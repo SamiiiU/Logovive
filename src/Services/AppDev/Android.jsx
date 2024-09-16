@@ -23,7 +23,7 @@ const Android = () => {
     <SideButtons/>
     <Hero name={android[2].name} head = {android[2].heading} para={android[2].paragraph} image={android[2].image} />
     <Intro heading={android[2].introHead} para={android[2].introPara} image={android[2].introImage}/>
-    <Cards/>
+
     <Portfolio idx={2}/>
     <Experience/>
     <Contact/>

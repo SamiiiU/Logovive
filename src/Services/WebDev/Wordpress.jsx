@@ -8,6 +8,7 @@ import Intro from '../Common/Intro'
 import Portfolio from '../Common/Portfolio'
 import Experience from '../../Pages/Home/HomeComps/Expierence'
 import Contact from '../../Common/ContactForm'
+import Cards from '../Common/Cards'
 
 const Wordpress = () => {
   
@@ -21,6 +22,7 @@ const Wordpress = () => {
         <SideButtons/>
         <Hero name={Webdev[2].name} head = {Webdev[2].heading} para={Webdev[2].paragraph} image={Webdev[2].image} />
         <Intro heading={Webdev[2].introHead} para={Webdev[2].introPara} image={Webdev[2].introImage}/>
+        <Cards type={"Web"}/>
         <Portfolio idx={2}/>
         <Experience/>
         <Contact/>

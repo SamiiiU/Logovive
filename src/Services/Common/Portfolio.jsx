@@ -1,11 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {Webdev} from '../Services Data/WebDev'
 import { Link } from 'react-router-dom'
+import PortfolioView from './PortfolioView'
 const Portfolio = ({idx}) => {
 
     console.log(Webdev[idx].portfolo)
+
+    const [isShow , setIsShow] = useState(true)
   return (
+    
     <div className='w-full md:px-28 sm:px-16 px-8 py-16 bg-[#181818] text-teal-50'>
+      
       <div className='flex flex-col items-center justify-center w-full py-8 mb-8 text-3xl gap-y-4 md:flex-row lg:text-4xl'>
 
             <h1 className='font-bold md:w-[40%] w-full text-5xl'>Our Outstanding
@@ -18,7 +23,13 @@ const Portfolio = ({idx}) => {
 
         <div className='flex flex-wrap justify-center w-full gap-8 '>
             {Webdev[idx].portfolo.map((item , index) => (
-                <div key={index} className='md:w-[20em] md:h-[20em] rounded-md w-[200px] h-[200px] bg-[#292929]'>
+                <div key={index} className='md:w-[20em] md:h-[20em] rounded-md w-[200px] h-[200px] bg-[#292929]'
+                style={{
+                  backgroundImage: `url(${item})`, // Wrap the Blob URL with url()
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                }}
+                >
                         .
                 </div>
             ))}

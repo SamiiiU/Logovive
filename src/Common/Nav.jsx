@@ -55,7 +55,7 @@ const Nav = () => {
       ></div>
 
       {/* NavMenu */}
-      <div className='flex items-center justify-center gap-4 px-4 text-sm lg:gap-8 xl:text-[1rem]'>
+      <div className='uppercase flex items-center justify-center gap-4 px-4 text-sm lg:gap-8 xl:text-[1rem]'>
 
          {/* go to Home  */}
         <Link to='/'><h1 className=' font-medium cursor-pointer hover:text-[#ef572a] transition-all'>  Home</h1></Link>

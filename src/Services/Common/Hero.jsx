@@ -23,13 +23,13 @@ const Hero = ({ head , name , para , image}) => {
             </div>
 
             <div className='sm:w-[50%] w-[80%]   sm:h-[80%] h-1/2'
-            style={{backgroundImage : `url(${image})` ,
-            
-                backgroundPosition : "center",
-                backgroundSize : "contain",
-                backgroundRepeat : 'no-repeat',
-                        
-        }}
+              style={{backgroundImage : `url(${image})` ,
+              
+                  backgroundPosition : "center",
+                  backgroundSize : "contain",
+                  backgroundRepeat : 'no-repeat',
+                          
+          }}
             />
            
         </div>

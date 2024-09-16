@@ -3,32 +3,32 @@ import Nav from '../../Common/Nav'
 import Footer from '../../Common/Footer'
 import SideButtons from '../../Common/SideButtons'
 import Hero from '../Common/Hero'
-import {Webdev} from '../Services Data/WebDev'
+import { marketing } from '../Services Data/Marketing'
 import Intro from '../Common/Intro'
 import Cards from '../Common/Cards'
 import Portfolio from '../Common/Portfolio'
 import Experience from '../../Pages/Home/HomeComps/Expierence'
 import Contact from '../../Common/ContactForm'
 
-const WebDev = () => {
+const DigitalMarketing = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0); 
   }, []);
-
+  
   return (
     <div className='w-full overflow-x-hidden'>
-        <Nav/>
-        <SideButtons/>
-        <Hero name={Webdev[0].name} head = {Webdev[0].heading} para={Webdev[0].paragraph} image={Webdev[0].image} />
-        <Intro heading={Webdev[0].introHead} para={Webdev[0].introPara} image={Webdev[0].introImage}/>
-        <Cards/>
-        <Portfolio idx={0}/>
-        <Experience/>
-        <Contact/>
-        <Footer/>
-    </div>
+    <Nav/>
+    <SideButtons/>
+    <Hero name={marketing[3].name} head = {marketing[3].heading} para={marketing[3].paragraph} image={marketing[3].image} />
+    <Intro heading={marketing[3].introHead} para={marketing[3].introPara} image={marketing[3].introImage}/>
+    <Cards/>
+    <Portfolio idx={0}/>
+    <Experience/>
+    <Contact/>
+    <Footer/>
+</div>
   )
 }
 
-export default WebDev
+export default DigitalMarketing

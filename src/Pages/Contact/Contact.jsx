@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Nav from '../../Common/Nav'
 import Footer from '../../Common/Footer'
 import SideButtons from '../../Common/SideButtons'
 const Contact = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0); 
+      }, []);
   return (
 
     <>

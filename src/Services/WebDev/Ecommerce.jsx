@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Nav from '../../Common/Nav'
 import Footer from '../../Common/Footer'
 import SideButtons from '../../Common/SideButtons'
@@ -10,6 +10,12 @@ import Experience from '../../Pages/Home/HomeComps/Expierence'
 import Contact from '../../Common/ContactForm'
 
 const Ecommerce = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0); 
+  }, []);
+
+
   return (
     <div className='w-full overflow-x-hidden'>
         <Nav/>
@@ -19,7 +25,6 @@ const Ecommerce = () => {
         <Portfolio idx={4}/>
         <Experience/>
         <Contact/>
-        <Footer/>
         <Footer/>
     </div>
   )

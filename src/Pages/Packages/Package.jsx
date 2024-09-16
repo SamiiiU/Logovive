@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Nav from '../../Common/Nav'
 import Footer from '../../Common/Footer'
 import SideButtons from '../../Common/SideButtons'
@@ -10,6 +10,10 @@ import ContactForm from '../../Common/ContactForm'
 import Exp from './PackagesComps/Exp'
 
 const Package = () => {
+  
+  useEffect(() => {
+    window.scrollTo(0, 0); 
+  }, []);
   return (
     <div className='w-full overflow-x-hidden'>
       <Nav/>

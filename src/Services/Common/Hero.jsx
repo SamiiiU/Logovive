@@ -12,7 +12,7 @@ const Hero = ({ head , name , para , image}) => {
             <div className="relative md:mt-0 mt-20 z-20 md:w-[50%] w-full sm:px-16 lg:px-24 px-8 md:h-[80%]   text-teal-50  flex justify-center items-start flex-col">
               <h1 className='px-3 mb-2 font-bold text-[#ef572a] rounded-md bg-teal-50 '>{name}</h1>
           
-              <h1 className="text-xl font-bold md:text-4xl sm:text-2xl">{head}</h1>
+              <h1 className="text-xl font-bold md:text-5xl sm:text-2xl">{head}</h1>
               <p className="mt-4 font-normal ">{para}</p>
 
 

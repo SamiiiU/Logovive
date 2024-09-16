@@ -1,6 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 const Intro = ({heading  , para , image }) => {
+
+  useEffect(() => {
+    const paragraph = document.querySelector('#paragraph');
+    if (paragraph) {
+      paragraph.innerHTML = para; 
+    }
+  }, [para]); 
   return (
     <div className='w-full py-12 md:px-28 h-auto sm:px-16 px-8 bg-[#181818]  text-teal-50 '>
         <div className='flex flex-col items-center justify-center w-full h-full gap-4 md:flex-row '>
@@ -18,7 +25,7 @@ const Intro = ({heading  , para , image }) => {
             <h1 className='my-8 text-3xl font-bold sm:text-4xl'>
                 {heading}
             </h1>
-            <p>{para}</p>
+            <p id="paragraph"></p>
         </div>
         </div>
 

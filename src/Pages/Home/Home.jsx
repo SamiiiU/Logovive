@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Hero from './HomeComps/Hero'
 import Nav from '../../Common/Nav'
 import Partners from './HomeComps/Partners'
@@ -10,6 +10,10 @@ import SideButtons from '../../Common/SideButtons'
 import ContactForm from '../../Common/ContactForm'
 
 const Home = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0); 
+  }, []);
   return (
     <div className='w-full overflow-x-hidden transition-all'>
     <SideButtons/>

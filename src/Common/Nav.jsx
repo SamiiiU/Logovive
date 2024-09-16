@@ -87,20 +87,20 @@ const Nav = () => {
             {/* All Mob apps navs  */}
             <div className='flex flex-col flex-1 text-sm gap-y-4'>
             <h1 className='mb-4 text-xl'>Mobile Applications </h1>
-              <p className='w-full py-1 transition-all hover:pl-4 hover:bg-orange-pink'>IOS APPS</p>
-              <p className='w-full py-1 transition-all hover:pl-4 hover:bg-orange-pink'>Game apps</p>
-              <p className='w-full py-1 transition-all hover:pl-4 hover:bg-orange-pink'>Abdroid apps</p>
-              <p className='w-full py-1 transition-all hover:pl-4 hover:bg-orange-pink'>Hybrid Apps</p>
+              <Link to="/ios"><p className='w-full py-1 transition-all hover:pl-4 hover:bg-orange-pink'>IOS APPS</p></Link>
+              <Link to="/game"><p className='w-full py-1 transition-all hover:pl-4 hover:bg-orange-pink'>Game apps</p></Link>
+              <Link to="/android"><p className='w-full py-1 transition-all hover:pl-4 hover:bg-orange-pink'>Abdroid apps</p></Link>
+              <Link to="/hybrid"><p className='w-full py-1 transition-all hover:pl-4 hover:bg-orange-pink'>Hybrid Apps</p></Link>
 
             </div>
 
             {/* ALl Marketing navs  */}
             <div className='flex flex-col flex-1 text-sm gap-y-4'>
             <h1 className='mb-4 text-xl'>Marketing</h1>
-              <p className='w-full py-1 transition-all hover:pl-4 hover:bg-orange-pink'>SEO</p>
-              <p className='w-full py-1 transition-all hover:pl-4 hover:bg-orange-pink'>PPC</p>
-              <p className='w-full py-1 transition-all hover:pl-4 hover:bg-orange-pink'>Digital Marketing</p>
-              <p className='w-full py-1 transition-all hover:pl-4 hover:bg-orange-pink'>Content Writing</p>
+              <Link to="/digitalMarketing"><p className='w-full py-1 transition-all hover:pl-4 hover:bg-orange-pink'>Digital Marketing</p></Link>
+              <Link to="/seo"><p className='w-full py-1 transition-all hover:pl-4 hover:bg-orange-pink'>SEO</p></Link>
+              <Link to="/ppc"><p className='w-full py-1 transition-all hover:pl-4 hover:bg-orange-pink'>PPC</p></Link>
+              <Link to="/contentWriting"><p className='w-full py-1 transition-all hover:pl-4 hover:bg-orange-pink'>Content Writing</p></Link>
             </div>
 
             </div>
@@ -164,7 +164,7 @@ const Nav = () => {
         <div onClick={toggleDropdown} className='relative font-medium cursor-pointer '>
           <h1>{"Services ->"}</h1>
           <ul className={`transition-all translate-x-40 text-left duration-300 ease-in-out overflow-hidden ${
-            isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+            isOpen ? 'max-h-fit opacity-100' : 'max-h-0 opacity-0'
             }`}>
             <li>Web Designing
               <ul className='translate-x-8'>
@@ -178,19 +178,20 @@ const Nav = () => {
             
             <li>App Developement
               <ul className='translate-x-8'>
-                <li>Android App </li>
-                <li>IOS App </li>
-                <li>Hybrid App </li>
-                <li>Game Apps </li>
+                <Link to="/ios"><li>IOS App </li></Link>
+                <Link to="/game"><li>Game Apps </li></Link>
+                <Link to="/android"><li>Android App </li></Link>
+                <Link to="/hybrid"><li>Hybrid App </li></Link>
+                
               </ul>
             </li>
 
             <li>Marketing
             <ul className='translate-x-8'>
-                <li>Digital Marketing </li>
-                <li>PPC </li>
-                <li>SEO</li>
-                <li>Content Writing</li>
+                <Link to="/digitalMarketing"><li>Digital Marketing </li></Link>
+                <Link to="/seo"><li>SEO</li></Link>
+                <Link to="/ppc"><li>PPC </li></Link>          
+                <Link to="/contentWriting"><li>Content Writing</li></Link>
               </ul>
             </li>
           </ul>

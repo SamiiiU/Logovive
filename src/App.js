@@ -1,6 +1,8 @@
-import React , {lazy , Suspense} from 'react';
+import React , {lazy , Suspense, useEffect, useState} from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Loader from './Animation/Loader';
+import img from './Assets/HeroAsset/offer.webp'
+
 
 // Lazy load components
 const Home = lazy(() => import('./Pages/Home/Home'));
@@ -26,6 +28,40 @@ const Android = lazy(() => import('./Services/AppDev/Android'));
 const Hybrid = lazy(() => import('./Services/AppDev/Hybrid'));
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true); // Initial loading state
+
+  const imageList = [
+    './Assets/logo.png',
+    './Assets/logo.png',
+    './Assets/HeroAsset/Herobg.jpg',
+    './Assets/HeroAsset/manager.jpg',
+    './Assets/HeroAsset/glass.webp',
+    './Assets/HeroAsset/offer.webp'
+
+  ];
+
+  const preloadImages = (imageList) => {
+    return Promise.all(
+      imageList.map((src) => {
+        return new Promise((resolve, reject) => {
+          const img = new Image();
+          img.src = src;
+          img.onload = resolve;
+          img.onerror = reject;
+        });
+      })
+    );
+  };
+
+
+  useEffect(() => {
+    preloadImages(imageList)
+      .then(() => setIsLoading(false))
+      .catch((err) => console.error("Failed to load images", err));
+  }, []);
+  
+  
+  
   return (
     <>
     {/* Wrap Routes in Suspense */}

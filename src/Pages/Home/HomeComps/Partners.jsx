@@ -18,7 +18,7 @@ import {initAOS} from '../../../Animation/AosAnimation'
 const Partners = () => {
 
     useEffect(() => {
-        initAOS( 50 , 0 , 1000 );
+        initAOS( 50 , 10 , 1000 );
       }, []);
 
   return (
@@ -26,7 +26,7 @@ const Partners = () => {
     <div className='text-teal-50   w-full py-8 bg-[#181818] '>
         
         {/* partners names and logos  */}
-      <div data-aos="fade-up"  className='flex flex-col flex-wrap px-8 mb-16 sm:px-16 md:px-24 sm:flex-row animate-fadeUp'>
+      <div   className='flex flex-col flex-wrap px-8 mb-16 sm:px-16 md:px-24 sm:flex-row animate-fadeUp'>
         <h1 className='font-bold md:text-3xl text-2xl w-full sm:w-[20%] flex justify-center mb-4  items-center '>Our Partners</h1>
 
         <div className='sm:w-[80%] w-[100%] sm:text-5xl text-4xl flex items-center '>

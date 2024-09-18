@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { FaWix } from "react-icons/fa6";
 import { FaShopify } from "react-icons/fa6";
 import { FaAmazon } from "react-icons/fa";
@@ -16,6 +16,8 @@ import {initAOS} from '../../../Animation/AosAnimation'
 
 
 const Partners = () => {
+    
+
 
     useEffect(() => {
         initAOS( 50 , 10 , 1000 );
@@ -48,7 +50,6 @@ const Partners = () => {
 
         <div className='flex gap-6 w-full my-8  xl:h-[80vh]  justify-center items-center'>
                 <div 
-                data-aos="fade-right"
                 className="md:relative absolute md:left-0 left-[-100%] block md:w-[40%] w-0 p-8 xl:h-full md:h-[26em] h-0"
                 style={{
                     backgroundImage: `url(${manager})`,

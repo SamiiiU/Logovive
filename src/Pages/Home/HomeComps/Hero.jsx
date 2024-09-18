@@ -1,23 +1,29 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import BgHero from "../../../Assets/HeroAsset/Herobg.jpg";
 import {initAOS} from '../../../Animation/AosAnimation'
+import Loader from "../../../Animation/Loader";
 
 const Hero = () => {
+
+  const [isLoading , setIsLoading] = useState(false)
 
   useEffect(() => {
     initAOS( 50 , 100 , 1000);
   }, []);
 
   return (
-    <div>
+    <>
+    {isLoading ? (<Loader/>) : (
+        <div>
         <div
-        className="relative z-0 w-full flex  justify-center items-center h-[90vh] 
-      "
+        className="relative z-0 w-full flex  justify-center items-center h-[90vh] "
+  
         style={{
           backgroundImage: `url(${BgHero})`, // Wrap the Blob URL with url()
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
+        onLoad={() => setIsLoading(true)}
       >
         <span className="absolute z-10 w-full h-full bg-zinc-900/70 0 "></span>
 
@@ -38,7 +44,9 @@ const Hero = () => {
           <span className="animate-zigzag absolute p-3 cursor-pointer sm:text-lg  text-sm tracking-wide font-semibold sm:bottom-16 bottom-8 bg-gradient-to-r  from-[#ef572a] to-[#e80e82] ">Top Package {"->"}</span>
         </div>
       </div>
-    </div>
+        </div>
+    )}
+    </>
   );
 };
 

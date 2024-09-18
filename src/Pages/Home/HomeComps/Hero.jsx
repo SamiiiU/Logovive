@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import BgHero from "../../../Assets/HeroAsset/Herobg.jpg";
+import {initAOS} from '../../../Animation/AosAnimation'
 
 const Hero = () => {
+
+  useEffect(() => {
+    initAOS( 50 , 100 , 1000);
+  }, []);
+
   return (
     <div>
         <div
@@ -16,13 +22,13 @@ const Hero = () => {
         <span className="absolute z-10 w-full h-full bg-zinc-900/70 0 "></span>
 
         <div className="z-20 w-full sm:px-24 px-8 md:h-[80%]   text-teal-50 md:text-5xl sm:text-4xl text-3xl flex flex-col justify-center  items-center">
-          <h1 className="font-bold text-center animate-fadeDown ">DIGITAL SERVICES FOR EVERY INDUSTRY</h1>
-          <p className="mt-4 font-light text-center animate-fadeUp">
+          <h1 data-aos="fade-up" className="font-bold text-center ">DIGITAL SERVICES FOR EVERY INDUSTRY</h1>
+          <p data-aos="fade-up" data-aos-delay={2000} className="mt-4 font-light text-center animate-fadeUp">
             We are recognized for our distinctive and versatile approach in
             providing digital solutions to businesses
           </p>
 
-          <p className="mt-8 text-xs text-center sm:text-sm text-light animate-fadeUp">
+          <p data-aos="fade-up"  className="mt-8 text-xs text-center sm:text-sm text-light animate-fadeUp">
             Logovive is a digital services company. We want to help businesses
             of all sizes and industries to be able to expand their business
             online. With our services, you can automate your business and keep

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { FaWix } from "react-icons/fa6";
 import { FaShopify } from "react-icons/fa6";
 import { FaAmazon } from "react-icons/fa";
@@ -11,16 +11,22 @@ import offer from '../../../Assets/HeroAsset/offer.webp'
 import Cards from '../HomeComps/Cards'
 import '../Sidebar.css'
 
+import {initAOS} from '../../../Animation/AosAnimation'
+
+
 
 const Partners = () => {
 
+    useEffect(() => {
+        initAOS( 50 , 0 , 1000 );
+      }, []);
 
   return (
 
     <div className='text-teal-50   w-full py-8 bg-[#181818] '>
         
         {/* partners names and logos  */}
-      <div className='flex flex-col flex-wrap px-8 mb-16 sm:px-16 md:px-24 sm:flex-row animate-fadeUp'>
+      <div data-aos="fade-up"  className='flex flex-col flex-wrap px-8 mb-16 sm:px-16 md:px-24 sm:flex-row animate-fadeUp'>
         <h1 className='font-bold md:text-3xl text-2xl w-full sm:w-[20%] flex justify-center mb-4  items-center '>Our Partners</h1>
 
         <div className='sm:w-[80%] w-[100%] sm:text-5xl text-4xl flex items-center '>
@@ -41,7 +47,8 @@ const Partners = () => {
         {/* About us starting............. */}
 
         <div className='flex gap-6 w-full my-8  xl:h-[80vh]  justify-center items-center'>
-                <div
+                <div 
+                data-aos="fade-right"
                 className="md:relative absolute md:left-0 left-[-100%] block md:w-[40%] w-0 p-8 xl:h-full md:h-[26em] h-0"
                 style={{
                     backgroundImage: `url(${manager})`,
@@ -54,7 +61,9 @@ const Partners = () => {
                 
                 </div>
 
-                <div className='flex  md:w-[60%] w-full flex-col md:items-start items-center xl:pr-16 md:pr-8 sm:px-16 px-8'>
+                <div
+                data-aos="fade-left"
+                className='flex  md:w-[60%] w-full flex-col md:items-start items-center xl:pr-16 md:pr-8 sm:px-16 px-8'>
                     <h1 className='px-3 font-bold rounded-md bg-gradient-to-r  from-[#ef572a]  mb-2 to-[#e80e82]'>About Us</h1>
                     <h1 className='mb-8 text-4xl font-bold text-center xl:text-5xl md:text-left '>We Transform Businesses Into Brands</h1>
 
@@ -116,9 +125,9 @@ const Partners = () => {
 
 
         {/* Choosing plan  */}
-        <div className='flex flex-col items-center justify-center w-full px-8 py-4 mt-16 mb-8 gap-y-4 sm:flex-row sm:px-16 xl:items-end xl:px-28'>
-            <div className= "w-full sm:w-[40%] ">
-                <h1 className='lg:text-4xl text-3xl font-bold text-[#f89521] my-2'>Choosing the plan</h1>
+        <div data-aos="fade-up" className='flex flex-col items-center justify-center w-full px-8 py-4 mt-16 mb-8 gap-y-4 sm:flex-row sm:px-16 xl:items-end xl:px-28'>
+            <div  className= "w-full sm:w-[40%] ">
+                <h1  className='lg:text-4xl text-3xl font-bold text-[#f89521] my-2'>Choosing the plan</h1>
                 <h1 className='text-4xl font-bold'>That Is Right For You!</h1>
             </div>
 
@@ -134,16 +143,16 @@ const Partners = () => {
 
         <div className='w-full md:px-24 px-8 sm:px-16 flex  justify-center items-center py-8 mt-16 bg-gradient-to-t from-[#ef572a] to-[#ef572a]/10'>
             <div className='w-full p-4 border-2 border-dashed rounded-xl border-teal-50 '>
-                <h3 className='inline-block px-2 py-1 font-semibold bg-zinc-950'>OUR AIM IS TO OFFER YOU THE MAXIMUM VALUE</h3>
+                <h3 data-aos="fade-right" className='inline-block px-2 py-1 font-semibold bg-zinc-950'>OUR AIM IS TO OFFER YOU THE MAXIMUM VALUE</h3>
 
-                <h1 className='my-3 text-3xl font-bold md:text-5xl sm:text-4xl ' >SUPER  <span className='text-yellow-400'>COMBO PACKAGE</span></h1>
+                <h1 data-aos="fade-right" className='my-3 text-3xl font-bold md:text-5xl sm:text-4xl ' >SUPER  <span className='text-yellow-400'>COMBO PACKAGE</span></h1>
 
-                <p className='mb-3 tracking-wide'>
+                <p data-aos="fade-right" className='mb-3 tracking-wide'>
                 Our Super Combo Package is specially made for people who have completely made up their minds to expand online. This package is designed to give you maximum value for your budget, so don’t wait and order now.
                 </p>
 
                 <div className='flex flex-col items-center justify-center w-full gap-2 md:flex-row'>
-                    <div className='flex flex-col w-full md:flex-1'>
+                    <div data-aos="fade-up" className='flex flex-col w-full md:flex-1'>
                         <h1 className='text-2xl font-bold'>Logo Design</h1>
                         <ul className='px-2 my-4 text-sm list-item'>
                             <li className='mt-2'>Unlimited Logo Design Concepts</li>
@@ -162,7 +171,7 @@ const Partners = () => {
                     </div>
 
                     {/* combo 2 */}
-                    <div className='flex flex-col w-full md:flex-1 '>
+                    <div data-aos="fade-up" className='flex flex-col w-full md:flex-1 '>
                     <h1 className='text-2xl font-bold'>Website Design</h1>
                         <ul className='px-2 my-4 text-sm list-item'>
                             <li className='mt-2'>UNLIMITED Pages Website</li>
@@ -181,7 +190,7 @@ const Partners = () => {
                     </div>
                     
                     {/* Combo 3  */}
-                    <div className='flex flex-col w-full md:flex-1'>
+                    <div data-aos="fade-up" className='flex flex-col w-full md:flex-1'>
                     <h1 className='text-2xl font-bold'>Banner Design</h1>
                         <ul className='px-2 my-4 text-sm list-item'>
                             <li className='mt-2'>2 Design Concepts</li>
@@ -197,7 +206,7 @@ const Partners = () => {
                         </ul>
                     </div>
                     
-                    <div className='flex flex-col flex-1 '>
+                    <div data-aos="zoom-out" className='flex flex-col flex-1 '>
                     <div className='w-full my-8 h-36' 
                     style={{
                         backgroundImage: `url(${offer})`,
@@ -206,7 +215,7 @@ const Partners = () => {
                         backgroundRepeat: 'no-repeat',
                     }}> </div>
                         
-                    <div className='w-full px-4 py-8 border-t-2 border-teal-50 '>
+                    <div data-aos="fade-up" className='w-full px-4 py-8 border-t-2 border-teal-50 '>
                         <span className='px-4 py-2 font-semibold border-2 border-teal-50 hover:bg-teal-50 hover:text-zinc-800'>ORDER NOW</span>
                     </div>
 

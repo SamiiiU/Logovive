@@ -1,57 +1,63 @@
-import React from 'react';
+import React , {lazy , Suspense} from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Home from './Pages/Home/Home';
-import About from './Pages/About/About';
-import ShowCase from './Pages/ShowCase/ShowCase';
-import Package from './Pages/Packages/Package';
-import Contact from './Pages/Contact/Contact';
-import WebDev from './Services/WebDev/WebDev';
-import Shopify from './Services/WebDev/Shopify';
-import Wordpress from './Services/WebDev/Wordpress'
-import Wix from './Services/WebDev/Wix'
-import Ecommerce from './Services/WebDev/Ecommerce'
-import DigitalMarketing from './Services/Marketing/DigitalMarketing';
-import ContentWriting from './Services/Marketing/ContentWriting';
-import PPC from './Services/Marketing/PPC';
-import SEO from './Services/Marketing/SEO';
-import IOS from './Services/AppDev/IOS';
-import Game from './Services/AppDev/Game';
-import Android from './Services/AppDev/Android';
-import Hybrid from './Services/AppDev/Hybrid';
+import Loader from './Animation/Loader';
+
+// Lazy load components
+const Home = lazy(() => import('./Pages/Home/Home'));
+const About = lazy(() => import('./Pages/About/About'));
+const ShowCase = lazy(() => import('./Pages/ShowCase/ShowCase'));
+const Package = lazy(() => import('./Pages/Packages/Package'));
+const Contact = lazy(() => import('./Pages/Contact/Contact'));
+
+const WebDev = lazy(() => import('./Services/WebDev/WebDev'));
+const Shopify = lazy(() => import('./Services/WebDev/Shopify'));
+const Wordpress = lazy(() => import('./Services/WebDev/Wordpress'));
+const Wix = lazy(() => import('./Services/WebDev/Wix'));
+const Ecommerce = lazy(() => import('./Services/WebDev/Ecommerce'));
+
+const DigitalMarketing = lazy(() => import('./Services/Marketing/DigitalMarketing'));
+const ContentWriting = lazy(() => import('./Services/Marketing/ContentWriting'));
+const PPC = lazy(() => import('./Services/Marketing/PPC'));
+const SEO = lazy(() => import('./Services/Marketing/SEO'));
+
+const IOS = lazy(() => import('./Services/AppDev/IOS'));
+const Game = lazy(() => import('./Services/AppDev/Game'));
+const Android = lazy(() => import('./Services/AppDev/Android'));
+const Hybrid = lazy(() => import('./Services/AppDev/Hybrid'));
 
 function App() {
   return (
-    <Routes>
-     <Route path="/" element={<Home/>}/>
-     <Route path="/About" element={<About/>}/>
-     <Route path="/Showcase" element={<ShowCase/>}/>
-     <Route path="/Package" element={<Package/>}/>
-     <Route path="/Contact" element={<Contact/>}/>
+    <>
+    {/* Wrap Routes in Suspense */}
+    <Suspense fallback={<Loader />}>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/About" element={<About />} />
+        <Route path="/Showcase" element={<ShowCase />} />
+        <Route path="/Package" element={<Package />} />
+        <Route path="/Contact" element={<Contact />} />
 
-     {/* Services ROutes here  */}
+        {/* Services Routes */}
+        <Route path="/webdev" element={<WebDev />} />
+        <Route path="/shopify" element={<Shopify />} />
+        <Route path="/wordpress" element={<Wordpress />} />
+        <Route path="/wix" element={<Wix />} />
+        <Route path="/ecommerce" element={<Ecommerce />} />
 
-     {/* Web Designings below  */}
+        {/* Marketing Pages */}
+        <Route path='/digitalMarketing' element={<DigitalMarketing />} />
+        <Route path='/contentWriting' element={<ContentWriting />} />
+        <Route path='/ppc' element={<PPC />} />
+        <Route path='/seo' element={<SEO />} />
 
-     <Route path="/webdev" element={<WebDev/>} />
-     <Route path="/shopify" element={<Shopify/>} />
-     <Route path="/wordpress" element={<Wordpress/>} />
-     <Route path="/wix" element={<Wix/>} />
-     <Route path="/ecommerce" element={<Ecommerce/>} />
-
-     {/* marketing pages below  */}
-
-    <Route path='/digitalMarketing' element={<DigitalMarketing/>}/>
-    <Route path='/contentWriting' element={<ContentWriting/>}/>
-    <Route path='/ppc' element={<PPC/>}/>
-    <Route path='/seo' element={<SEO/>}/>
-
-    {/* apps pages started */}
-
-    <Route path='/ios' element={<IOS/>}/>
-    <Route path='/game' element={<Game/>}/>
-    <Route path='/android' element={<Android/>}/>
-    <Route path='/hybrid' element={<Hybrid/>}/>
-    </Routes>
+        {/* App Development Pages */}
+        <Route path='/ios' element={<IOS />} />
+        <Route path='/game' element={<Game />} />
+        <Route path='/android' element={<Android />} />
+        <Route path='/hybrid' element={<Hybrid />} />
+      </Routes>
+    </Suspense>
+    </>
   );
 }
 

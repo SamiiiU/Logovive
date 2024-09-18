@@ -1,11 +1,18 @@
 import React, { useEffect, useState } from 'react'
 import {packageData} from '../../Packages/PackagesData'
+import {initAOS} from '../../../Animation/AosAnimation'
+
 const Cards = () => {
+
+    useEffect(() => {
+        initAOS( 50 , 500 , 1000 );
+      }, []);
+
+
     const [cards , setType] = useState(packageData.Logo)
     const handleCards = (e) => {
         const currId = e.target.id
-        
-        
+          
         switch (currId) {
 
             case "1":
@@ -36,15 +43,19 @@ const Cards = () => {
         
 
     }
+
+
+
+
   return (
     <div className='w-full px-8 py-12 sm:px-16 xl:px-28 bg-[#181818] text-teal-50 '>
             <div className='flex flex-wrap items-center justify-center w-full py-8 gap-x-16 gap-y-4 xl:text-lg'>
 
-                <h1 className=' font-medium cursor-pointer hover:text-[#ef572a] transition-all' id='1' onClick={handleCards}>  Logo Design</h1>
-                <h1 className=' font-medium cursor-pointer hover:text-[#ef572a] transition-all' id='2' onClick={handleCards}>  Website</h1>
-                <h1 className=' font-medium cursor-pointer hover:text-[#ef572a] transition-all' id='3' onClick={handleCards}>  Wordpress</h1>
-                <h1 className=' font-medium cursor-pointer hover:text-[#ef572a] transition-all' id='4' onClick={handleCards}>  Ecommerces</h1>
-                <h1 className=' font-medium cursor-pointer hover:text-[#ef572a] transition-all' id='5' onClick={handleCards}>  Shopify</h1>
+                <h1 data-aos="zoom-out" className=' font-medium cursor-pointer hover:text-[#ef572a] transition-all' id='1' onClick={handleCards}>  Logo Design</h1>
+                <h1 data-aos="zoom-out" className=' font-medium cursor-pointer hover:text-[#ef572a] transition-all' id='2' onClick={handleCards}>  Website</h1>
+                <h1 data-aos="zoom-out" className=' font-medium cursor-pointer hover:text-[#ef572a] transition-all' id='3' onClick={handleCards}>  Wordpress</h1>
+                <h1 data-aos="zoom-out" className=' font-medium cursor-pointer hover:text-[#ef572a] transition-all' id='4' onClick={handleCards}>  Ecommerces</h1>
+                <h1 data-aos="zoom-out" className=' font-medium cursor-pointer hover:text-[#ef572a] transition-all' id='5' onClick={handleCards}>  Shopify</h1>
                 
             </div>
 
@@ -52,7 +63,7 @@ const Cards = () => {
             <div className='relative flex flex-wrap items-center justify-between w-full gap-y-8 sm:gap-y-4 '>
 
                 {cards.map((item , idx) => (
-                    <div key={idx} className='md:w-[33%] sm:w-[45%] w-full py-4 bg-[#222222] md:hover:scale-[105%] transition-all'>
+                    <div data-aos-once="false" data-aos="zoom-in" key={idx} className='md:w-[33%] sm:w-[45%] w-full py-4 bg-[#222222] md:hover:scale-[105%] transition-all'>
                     <div className='flex items-center justify-center w-full py-2 text-lg font-semibold text-center border-b-2 md:text-2xl border-b-teal-50'>{item.name} <br/> Package</div>
 
                     <div className='w-full flex justify-center py-4 items-center text-5xl md:text-[4rem] font-bold my-2'><span className='text-lg'>$</span>{item.price}</div>

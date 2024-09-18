@@ -1,29 +1,37 @@
-import React from "react";
+import React, { useEffect } from "react";
 import glass from '../../../Assets/HeroAsset/glass.webp'
+import {initAOS} from '../../../Animation/AosAnimation'
+
 
 const How = () => {
+
+  useEffect(() => {
+    initAOS( 50 , 500 , 1000 );
+  }, []);
+
+  
   return (
     <div className="w-full py-8 bg-[#181818] text-teal-50">
-      <div className="flex-col items-center justify-start w-full px-8 sm:px-16 md:px-28 mb-28 md:flex ">
-        <h1 className="px-3 font-bold rounded-md bg-gradient-to-r  from-[#ef572a]   mb-2 to-[#e80e82]">
+      <div  className="flex-col items-center justify-start w-full px-8 sm:px-16 md:px-28 mb-28 md:flex ">
+        <h1 data-aos="fade-up" className="px-3 font-bold rounded-md bg-gradient-to-r  from-[#ef572a]   mb-2 to-[#e80e82]">
           How it works
         </h1>
 
-        <h1 className="my-2 text-3xl font-bold text-center uppercase md:text-5xl sm:text-4xl">
+        <h1 data-aos="fade-up" className="my-2 text-3xl font-bold text-center uppercase md:text-5xl sm:text-4xl">
         Simple But Effective Process
         </h1>
 
-        <p className="mb-8 font-medium text-center">
+        <p data-aos="fade-up" className="mb-8 font-medium text-center">
         Our strategic process of every web project consists of 3 simple steps. These steps may seem simple enough but when experts like us are working on these steps, you can expect ideal results. Just following these 3 steps effectively, your business can become a new world-class brand.
 
 
         </p>
 
         {/* Steps box  */}
-        <div className="flex flex-col flex-wrap w-full md:flex-row gap-x-4">
+        <div  className="flex flex-col flex-wrap w-full md:flex-row gap-x-4">
 
             {/* step 1 */}
-            <div className="flex flex-col items-center justify-center flex-1 ">
+            <div data-aos="zoom-in" className="flex flex-col items-center justify-center flex-1 ">
                 <h1 className="mb-8 text-4xl font-bold">01</h1>
 
                 <h1 className="mb-4 text-2xl font-semibold"> Consultation</h1>
@@ -32,7 +40,7 @@ const How = () => {
             </div>
 
             {/* step 2  */}
-            <div className="flex flex-col items-center justify-center flex-1 ">
+            <div data-aos="zoom-in" className="flex flex-col items-center justify-center flex-1 ">
 
 
             <h1 className="mb-8 text-4xl font-bold">02</h1>
@@ -43,7 +51,7 @@ const How = () => {
             </div>
 
             {/* step 3  */}
-            <div className="flex flex-col items-center justify-center flex-1 ">
+            <div data-aos="zoom-in" className="flex flex-col items-center justify-center flex-1 ">
             <h1 className="mb-8 text-4xl font-bold">03</h1>
 
             <h1 className="mb-4 text-2xl font-semibold">Marketing</h1>
@@ -57,11 +65,11 @@ const How = () => {
         
       </div>
       
-        <div className=" w-full flex md:flex-row flex-col bg-gradient-to-t from-[#e5463c] md:h-[50vh] justify-center items-center h-[70vh] to-[#ef572a]/10 p-8">
-            <div className="md:-mt-20 md:w-[40%] w-1/2 md:h-[150%] h-[50%] "
+        <div data-aos="fade" className=" w-full flex md:flex-row flex-col bg-gradient-to-t from-[#e5463c] sm:h-[50vh] justify-center items-center h-screen to-[#ef572a]/10 p-8">
+            <div className="md:-mt-20 md:w-[40%] w-screen md:h-[150%] h-[50%] "
                 style={{
                     backgroundImage: `url(${glass})`,
-                    backgroundSize: '80%',
+                    backgroundSize: 'contain',
                     backgroundPosition: 'center',
                     backgroundRepeat: 'no-repeat',
                 }}

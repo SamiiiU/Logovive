@@ -4,7 +4,13 @@ import { Link } from 'react-router-dom';
 import { AiOutlineMenuFold } from "react-icons/ai";
 import { IoMdArrowDropright } from "react-icons/io";
 
+import {initAOS} from '../Animation/AosAnimation'
+
 const Nav = () => {
+
+  useEffect(() => {
+    initAOS( 200 , 300 , 1000);
+  }, []);
 
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   const [isMenuOpen , setMenuOpen] = useState(false)
@@ -80,7 +86,7 @@ const Nav = () => {
 
   return (
     <>
-    <div className={` ${screenWidth > 860 ? "flex" : 'hidden'}  z-40 text-teal-50 w-full px-16 lg:px-20 py-3 bg-[#181818]  justify-between items-center`}>
+    <div  className={` ${screenWidth > 860 ? "flex" : 'hidden'}  z-40 text-teal-50 w-full px-16 lg:px-20 py-3 bg-[#181818]  justify-between items-center`}>
       {/* Logo */}
       <div className='logo w-[15%] h-12 '
       style={{backgroundImage : `url(${Logo})` , backgroundSize : '60%' , backgroundPosition : 'center' , backgroundRepeat : 'no-repeat'}}

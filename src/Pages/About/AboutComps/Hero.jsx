@@ -3,7 +3,7 @@ import React from 'react'
 const Hero = () => {
   return (
         <div
-            className=" z-0 w-full flex  justify-start items-center bg-gradient-to-b from-[#ef572a] to-[#972003] h-1/2 md:h-[90vh] "
+            className=" z-0 w-full flex  justify-start items-center bg-gradient-to-b from-[#ef572a] to-[#972003] h-fit  md:h-[90vh] "
           
           >
             <div className="relative mt-20 z-20 md:w-[50%] w-full sm:px-24 px-8 md:h-[80%]   text-teal-50  flex justify-center items-start flex-col">
@@ -15,13 +15,12 @@ const Hero = () => {
               </p>
 
 
-              <div className='w-full py-9 '>
-              <span className="p-3 sm:text-sm text-xs font-semibold  uppercase border-2 cursor-pointer border-teal-50 tracking-widest bg-teal-50 text-[#032c61]">Get Started </span>
-              <span className="p-3 mx-6 sm:text-sm text-xs font-semibold tracking-widest border-2 cursor-pointer uppercase transition-all hover:bg-transparent hover:text-teal-50 border-teal-50 bg-teal-50 text-[#032c61]">View Portfolio {"->"}</span>
+              <div className='w-full h-20 mt-9'>
+              <span className="sm:p-3 p-1 rounded-sm sm:text-sm text-xs font-semibold  uppercase border-2 cursor-pointer border-teal-50 tracking-widest bg-teal-50 text-[#032c61]">Get Started </span>
+              <span className="sm:p-3 p-1 rounded-sm ml-3 sm:ml-6 sm:text-sm text-xs font-semibold tracking-widest border-2 cursor-pointer uppercase transition-all hover:bg-transparent hover:text-teal-50 border-teal-50 bg-teal-50 text-[#032c61]">View Portfolio {"->"}</span>
               </div>
             </div>
 
-            {/* About down page */}
            
         </div>
   )

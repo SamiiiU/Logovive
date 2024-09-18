@@ -28,38 +28,6 @@ const Android = lazy(() => import('./Services/AppDev/Android'));
 const Hybrid = lazy(() => import('./Services/AppDev/Hybrid'));
 
 function App() {
-  const [isLoading, setIsLoading] = useState(true); // Initial loading state
-
-  const imageList = [
-    './Assets/logo.png',
-    './Assets/logo.png',
-    './Assets/HeroAsset/Herobg.jpg',
-    './Assets/HeroAsset/manager.jpg',
-    './Assets/HeroAsset/glass.webp',
-    './Assets/HeroAsset/offer.webp'
-
-  ];
-
-  const preloadImages = (imageList) => {
-    return Promise.all(
-      imageList.map((src) => {
-        return new Promise((resolve, reject) => {
-          const img = new Image();
-          img.src = src;
-          img.onload = resolve;
-          img.onerror = reject;
-        });
-      })
-    );
-  };
-
-
-  useEffect(() => {
-    preloadImages(imageList)
-      .then(() => setIsLoading(false))
-      .catch((err) => console.error("Failed to load images", err));
-  }, []);
-  
   
   
   return (

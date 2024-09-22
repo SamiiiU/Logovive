@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react'
-import special from '../../../Assets/HeroAsset/special.jpg'
+import special from '../../../Assets/HeroAsset/manager.jpg'
 import {initAOS} from '../../../Animation/AosAnimation'
 
 const Special = () => {
   useEffect(() => {
-    initAOS( 50 , 500 , 1000 );
+    // initAOS( 50 , 500 , 1000 );
   }, []);
 
   return (
@@ -32,7 +32,7 @@ const Special = () => {
 
       </div>
 
-      <div data-aos="fade-up" className='w-full flex justify md:flex-row flex-col center h-screen sm:h-[50vh] bg-zinc-950'>
+      <div  className='w-full flex justify md:flex-row flex-col center h-screen sm:h-[50vh] bg-zinc-950'>
         <div className='flex-1 h-40 sm:h-full' 
         style={{
             backgroundImage: `url(${special})`,

@@ -20,7 +20,7 @@ const Partners = () => {
 
 
     useEffect(() => {
-        initAOS( 50 , 10 , 1000 );
+        // initAOS( 50 , 10 , 1000 );
       }, []);
 
   return (
@@ -63,7 +63,6 @@ const Partners = () => {
                 </div>
 
                 <div
-                data-aos="fade-left"
                 className='flex  md:w-[60%] w-full flex-col md:items-start items-center xl:pr-16 md:pr-8 sm:px-16 px-8'>
                     <h1 className='px-3 font-bold rounded-md bg-gradient-to-r  from-[#ef572a]  mb-2 to-[#e80e82]'>About Us</h1>
                     <h1 className='mb-8 text-4xl font-bold text-center xl:text-5xl md:text-left '>We Transform Businesses Into Brands</h1>
@@ -126,7 +125,7 @@ const Partners = () => {
 
 
         {/* Choosing plan  */}
-        <div data-aos="fade-up" className='flex flex-col items-center justify-center w-full px-8 py-4 mt-16 mb-8 gap-y-4 sm:flex-row sm:px-16 xl:items-end xl:px-28'>
+        <div  className='flex flex-col items-center justify-center w-full px-8 py-4 mt-16 mb-8 gap-y-4 sm:flex-row sm:px-16 xl:items-end xl:px-28'>
             <div  className= "w-full sm:w-[40%] ">
                 <h1  className='lg:text-4xl text-3xl font-bold text-[#f89521] my-2'>Choosing the plan</h1>
                 <h1 className='text-4xl font-bold'>That Is Right For You!</h1>
@@ -144,16 +143,16 @@ const Partners = () => {
 
         <div className='w-full md:px-24 px-8 sm:px-16 flex  justify-center items-center py-8 mt-16 bg-gradient-to-t from-[#ef572a] to-[#ef572a]/10'>
             <div className='w-full p-4 border-2 border-dashed rounded-xl border-teal-50 '>
-                <h3 data-aos="fade-right" className='inline-block px-2 py-1 font-semibold bg-zinc-950'>OUR AIM IS TO OFFER YOU THE MAXIMUM VALUE</h3>
+                <h3  className='inline-block px-2 py-1 font-semibold bg-zinc-950'>OUR AIM IS TO OFFER YOU THE MAXIMUM VALUE</h3>
 
-                <h1 data-aos="fade-right" className='my-3 text-3xl font-bold md:text-5xl sm:text-4xl ' >SUPER  <span className='text-yellow-400'>COMBO PACKAGE</span></h1>
+                <h1  className='my-3 text-3xl font-bold md:text-5xl sm:text-4xl ' >SUPER  <span className='text-yellow-400'>COMBO PACKAGE</span></h1>
 
-                <p data-aos="fade-right" className='mb-3 tracking-wide'>
+                <p  className='mb-3 tracking-wide'>
                 Our Super Combo Package is specially made for people who have completely made up their minds to expand online. This package is designed to give you maximum value for your budget, so don’t wait and order now.
                 </p>
 
                 <div className='flex flex-col items-center justify-center w-full gap-2 md:flex-row'>
-                    <div data-aos="fade-up" className='flex flex-col w-full md:flex-1'>
+                    <div  className='flex flex-col w-full md:flex-1'>
                         <h1 className='text-2xl font-bold'>Logo Design</h1>
                         <ul className='px-2 my-4 text-sm list-item'>
                             <li className='mt-2'>Unlimited Logo Design Concepts</li>
@@ -172,7 +171,7 @@ const Partners = () => {
                     </div>
 
                     {/* combo 2 */}
-                    <div data-aos="fade-up" className='flex flex-col w-full md:flex-1 '>
+                    <div  className='flex flex-col w-full md:flex-1 '>
                     <h1 className='text-2xl font-bold'>Website Design</h1>
                         <ul className='px-2 my-4 text-sm list-item'>
                             <li className='mt-2'>UNLIMITED Pages Website</li>
@@ -191,7 +190,7 @@ const Partners = () => {
                     </div>
                     
                     {/* Combo 3  */}
-                    <div data-aos="fade-up" className='flex flex-col w-full md:flex-1'>
+                    <div className='flex flex-col w-full md:flex-1'>
                     <h1 className='text-2xl font-bold'>Banner Design</h1>
                         <ul className='px-2 my-4 text-sm list-item'>
                             <li className='mt-2'>2 Design Concepts</li>
@@ -207,7 +206,7 @@ const Partners = () => {
                         </ul>
                     </div>
                     
-                    <div data-aos="zoom-out" className='flex flex-col flex-1 '>
+                    <div  className='flex flex-col flex-1 '>
                     <div className='w-full my-8 h-36' 
                     style={{
                         backgroundImage: `url(${offer})`,

@@ -8,7 +8,7 @@ const Hero = () => {
   const [isLoading , setIsLoading] = useState(false)
 
   useEffect(() => {
-    initAOS( 50 , 100 , 1000);
+    // initAOS( 50 , 100 , 1000);
   }, []);
 
   return (
@@ -23,7 +23,7 @@ const Hero = () => {
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
-        onLoad={() => setIsLoading(true)}
+        onLoad={() => setTimeout(() => {setIsLoading(true)} , 1000)}
       >
         <span className="absolute z-10 w-full h-full bg-zinc-900/70 0 "></span>
 

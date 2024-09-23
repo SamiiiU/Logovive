@@ -43,9 +43,9 @@ const Special = () => {
         }}
         ></div>
         <div className='flex flex-col items-start justify-center flex-1 gap-4 px-8 py-8 sm:h-full '>
-            <h1 className='text-3xl font-bold sm:text-4xl '>Let Us Give Your Customers <br/> The Ultimate Web Experience</h1>
+            <h1 className='text-3xl font-bold sm:text-4xl '>Allow Us To Provide The Best Online <br/> Experience For Your Clients</h1>
 
-            <p>You and your customers deserve the best, so that is what we promise to deliver. Our experts will make sure that your customers are easily converted to clients.</p>
+            <p>We pledge to give you and your clients the best because you deserve it. Our professionals will ensure that converting your visitors into clients is simple.</p>
 
            
 

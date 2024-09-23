@@ -67,7 +67,7 @@ const Partners = () => {
                     <h1 className='px-3 font-bold rounded-md bg-gradient-to-r  from-[#ef572a]  mb-2 to-[#e80e82]'>About Us</h1>
                     <h1 className='mb-8 text-4xl font-bold text-center xl:text-5xl md:text-left '>We Transform Businesses Into Brands</h1>
 
-                    <p className='font-semibold leading-5'>Our experts are known for branding common businesses into brands. When your business is online you too have the power to reach customers all around the world. We will make sure that there is a worldwide audience waiting for your products.</p>
+                    <p className='font-semibold leading-5'>Our professionals are renowned for turning ordinary companies into brands. You can contact clients anywhere in the globe by operating an internet business. We'll see to it that your products are anticipated by a global market.</p>
 
 
                     {/* 3 box icons  */}
@@ -141,6 +141,7 @@ const Partners = () => {
 
         <Cards/>
 
+        {/* Super combo starts here  */}
         <div className='w-full md:px-24 px-8 sm:px-16 flex  justify-center items-center py-8 mt-16 bg-gradient-to-t from-[#ef572a] to-[#ef572a]/10'>
             <div className='w-full p-4 border-2 border-dashed rounded-xl border-teal-50 '>
                 <h3  className='inline-block px-2 py-1 font-semibold bg-zinc-950'>OUR AIM IS TO OFFER YOU THE MAXIMUM VALUE</h3>

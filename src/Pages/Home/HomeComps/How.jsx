@@ -5,9 +5,7 @@ import {initAOS} from '../../../Animation/AosAnimation'
 
 const How = () => {
 
-  useEffect(() => {
-    initAOS( 50 , 500 , 1000 );
-  }, []);
+
 
   
   return (
@@ -18,7 +16,7 @@ const How = () => {
         </h1>
 
         <h1  className="my-2 text-3xl font-bold text-center uppercase md:text-5xl sm:text-4xl">
-        Simple But Effective Process
+        Easy To Use But Successful Method
         </h1>
 
         <p  className="mb-8 font-medium text-center">
@@ -65,7 +63,7 @@ const How = () => {
         
       </div>
       
-        <div data-aos="fade" className=" w-full flex md:flex-row flex-col bg-gradient-to-t from-[#e5463c] sm:h-[50vh] justify-center items-center h-screen to-[#ef572a]/10 p-8">
+        <div className=" w-full flex md:flex-row flex-col bg-gradient-to-t from-[#e5463c] sm:h-[50vh] justify-center items-center h-screen to-[#ef572a]/10 p-8">
             <div className="md:-mt-20 md:w-[40%] w-screen md:h-[150%] h-[50%] "
                 style={{
                     backgroundImage: `url(${glass})`,
@@ -76,7 +74,7 @@ const How = () => {
             ></div>
 
             <div className="md:w-[60%] w-full py-8 md:pr-16" >
-                <h1 className="my-2 mb-4 text-3xl font-bold text-center uppercase sm:text-4xl">Want To Expand Online? Let The Professionals Handle It.</h1>
+                <h1 className="my-2 mb-4 text-3xl font-bold text-center uppercase sm:text-4xl">Do You Want To Grow Online? Allow the experts to handle it.</h1>
 
                 <p className="mb-4 tracking-wider text-center">Logovive is comprised of many people who have spent decades in their fields of web technology. We are dedicated to delivering the best we can offer our clients.</p>
 

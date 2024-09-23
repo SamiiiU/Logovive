@@ -68,7 +68,7 @@ const ContactForm = () => {
                 ></textarea>
                 
 
-                <p className='my-4 font-medium'>By providing a telephone number and submitting this form you are consenting to be contacted by SMS text message. Message & data rates may apply. You can reply STOP to opt-out of further messaging.
+                <p className='my-4 font-medium'>By filling out this form and giving us your phone number, you agree to receive SMS text messages from us. Data and message fees might apply. Responding with STOP will allow you to stop receiving messages.
 
                 </p>
 

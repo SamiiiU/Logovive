@@ -66,18 +66,18 @@ const Cards = () => {
                     <div data-aos-once="false" data-aos="zoom-in" key={idx} className='md:w-[33%] sm:w-[45%] w-full py-4 bg-[#222222] md:hover:scale-[105%] transition-all'>
                     <div className='flex items-center justify-center w-full py-2 text-lg font-semibold text-center border-b-2 md:text-2xl border-b-teal-50'>{item.name} <br/> Package</div>
 
-                    <div className='w-full flex justify-center py-4 items-center text-5xl md:text-[4rem] font-bold my-2'><span className='text-lg'>$</span>{item.price}</div>
+                    <div className='w-full flex justify-center py-4 items-center text-5xl md:text-[6rem] font-bold my-2'><span className='text-lg sm:text-xl'>$</span>{item.price}</div>
 
-                    <div className='custom-scrollbar w-full h-40 overflow-y-scroll  px-8 pb-16 font-[500] text-xs md:text-sm'>
+                    <div className='custom-scrollbar w-full h-60 overflow-y-scroll   px-8 pb-16 font-[500] text-xs md:text-sm'>
                        {item.package.map((pkg , index) => (
                         <>
-                         <p key={index}>{pkg}</p>
+                         <p className='text-sm leading-7' key={index}>{pkg}</p>
                         </>
                        ))}
                         
                     </div>
 
-                    <div className='flex items-center justify-center w-full py-2 text-lg font-semibold border-y-2 border-teal-50'>speak with us </div>
+                    <div className='flex items-center justify-center w-full py-2 mt-4 text-lg font-semibold border-y-2 border-teal-50'>Speak with us <span className='px-4 font-bold'>(210) 910 88923</span></div>
                     <div className='flex items-center justify-center w-full text-lg font-semibold '>For Deliver Call now</div>
                     
 

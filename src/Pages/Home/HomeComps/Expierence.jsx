@@ -12,11 +12,11 @@ const Expierence = () => {
         <div className='flex flex-col items-center justify-start w-full px-8 text-center sm:px-16 md:px-28 mb-28 '>
 
         <h1  className="my-2 text-3xl font-bold uppercase ">
-        With A Collective Experience Of 200+ Years
+        With More Than 10 Years of Combined Experience
         </h1>
 
         <p  className="mb-8 font-medium text-center">
-        We have been serving businesses since 2010 and the experience of all our experts combine is more than 200 years. We want every business to benefit from our wealth of experience and expertise.
+        Our team of professionals has over 10 years of combined expertise, and we have been providing services to organizations since 2014. We want every company to take advantage of our extensive experience and knowledge base.
         </p>
 
         <div className='flex flex-col justify-between w-full gap-4 md:flex-row'>

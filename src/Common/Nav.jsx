@@ -3,6 +3,7 @@ import Logo from '../Assets/mern.png'
 import { Link } from 'react-router-dom';
 import { AiOutlineMenuFold } from "react-icons/ai";
 import { IoMdArrowDropright } from "react-icons/io";
+import { useGlobalContext } from '../GlobalStates/GlobalState';
 
 import {initAOS} from '../Animation/AosAnimation'
 
@@ -84,6 +85,20 @@ const Nav = () => {
     };
   }, [lastScrollY]); // Re-run the effect if lastScrollY changes
 
+
+
+
+  const {
+    isDarkMode, 
+    toggleDarkMode ,
+    isQuote , 
+    setIsQuote 
+} = useGlobalContext();
+
+const handleOpenQUote = () => {
+  setIsQuote(true)
+}
+
   return (
     <>
     <div  className={` ${screenWidth > 860 ? "flex" : 'hidden'}  z-40 text-teal-50 w-full px-16 lg:px-20 py-3 bg-[#181818]  justify-between items-center`}>
@@ -159,7 +174,7 @@ const Nav = () => {
         <div className='flex items-center justify-center w-auto gap-2 text-sm xl:text-sm'>
   
             <span className='cursor-pointer  px-3 py-2 font-bold text-center  bg-gradient-to-r  from-[#ef572a] to-[#e80e82] flex-nowrap'>(210) 920 8689</span>
-            <span className='flex-1 px-3 py-2 font-bold text-center cursor-pointer bg-teal-50 text-blue-950'>Get A Quote</span>
+            <span className='flex-1 px-3 py-2 font-bold text-center cursor-pointer bg-teal-50 text-blue-950' onClick={handleOpenQUote}>Get A Quote</span>
         </div>
 
 
@@ -207,7 +222,7 @@ const Nav = () => {
           <ul className={`transition-all translate-x-40 text-left duration-300 ease-in-out overflow-hidden ${
             isOpen ? 'max-h-fit opacity-100' : 'max-h-0 opacity-0'
             }`}>
-            <li>Web Designing
+            <li>Web Designing {"->"}
               <ul className='translate-x-8'>
                 <Link to="/webdev"><li>Website </li></Link>
                 <Link to="/wordpress"><li>Wordpress</li></Link>
@@ -217,7 +232,7 @@ const Nav = () => {
               </ul>
             </li>
             
-            <li>App Developement
+            <li>App Developement {"->"}
               <ul className='translate-x-8'>
                 <Link to="/ios"><li>IOS App </li></Link>
                 <Link to="/game"><li>Game Apps </li></Link>
@@ -227,7 +242,7 @@ const Nav = () => {
               </ul>
             </li>
 
-            <li>Marketing
+            <li>Marketing {"->"}
             <ul className='translate-x-8'>
                 <Link to="/digitalMarketing"><li>Digital Marketing </li></Link>
                 <Link to="/seo"><li>SEO</li></Link>

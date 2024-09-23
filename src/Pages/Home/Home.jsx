@@ -8,6 +8,8 @@ import Expierence from './HomeComps/Expierence'
 import Footer from '../../Common/Footer'
 import SideButtons from '../../Common/SideButtons'
 import ContactForm from '../../Common/ContactForm'
+import Testimonial from '../../Common/Tetimonal'
+import Quote from '../../Common/Quote'
 
 const Home = () => {
 
@@ -22,8 +24,10 @@ const Home = () => {
     <Hero/>
     <Partners/>
     <Special/>
+    <Quote/>
     <How/>
     <Expierence/>
+    <Testimonial/>
     <ContactForm/>
     <Footer/>
     </div>

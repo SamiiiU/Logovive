@@ -76,6 +76,15 @@ const Footer = () => {
 
             </div>
         </div>
+
+        <hr className='my-8'/>
+
+        <div className='flex flex-col items-center justify-center mt-8 sm:flex-row sm:justify-between gap-y-8 '>
+                <h1>© 2024 LOGOVIVE | All rights reserved.</h1>
+                <div className='text-center'>
+                Privacy Policy | Terms & Conditions |  Refund Cancellation Policy
+                </div>
+        </div>
     </div>
   )
 }

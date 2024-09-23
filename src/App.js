@@ -2,6 +2,7 @@ import React , {lazy , Suspense, useEffect, useState} from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Loader from './Animation/Loader';
 import img from './Assets/HeroAsset/offer.webp'
+import { GlobalProvider } from './GlobalStates/GlobalState';
 
 
 // Lazy load components
@@ -34,6 +35,7 @@ function App() {
     <>
     {/* Wrap Routes in Suspense */}
     <Suspense fallback={<Loader />}>
+    <GlobalProvider>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/About" element={<About />} />
@@ -60,6 +62,7 @@ function App() {
         <Route path='/android' element={<Android />} />
         <Route path='/hybrid' element={<Hybrid />} />
       </Routes>
+    </GlobalProvider>
     </Suspense>
     </>
   );

@@ -20,12 +20,19 @@ module.exports = {
         fadeDownNav: "fadeDownNav 500ms linear",
         fadeRight: "fadeRight 500ms linear",
         fadeDown: "fadeDown 500ms linear",
+        infinteX: "infiniteX 2s infinite",
       },
       keyframes: {
         zig: {
           '0%': { transform: 'translateX(-20%)' },
           '50%': { transform: 'translateX(20%)' },
           '100%': { transform: 'translateX(-20%)' },
+        },
+
+        infiniteX: {
+          '0%': { transform: 'translateX(-50px)' },
+
+          '100%': { transform: 'translateX(200px)' },
         },
         fadeUp: {
           '0%': { transform: 'translateY(50%)',  opacity : '0' },

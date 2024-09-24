@@ -1,5 +1,5 @@
 import React from 'react';
-
+import client1 from '../Assets/client1.webp'
 const Testimonial = () => {
   return (
     <div className="sm:h-screen py-16 relative md:px-28 sm:px-16 px-8 text-teal-50  bg-[#181818] rounded-lg">
@@ -24,17 +24,17 @@ const Testimonial = () => {
       </div>
 
       {/* Testimonial Card */}
-      <div className="relative p-6 bg-gray-800 rounded-lg shadow-lg">
-        <div className="flex items-center">
+      <div className="relative p-6 bg-[#2c2c2c] rounded-lg shadow-lg">
+        <div className="flex flex-col items-center md:flex-row">
           {/* Client Image */}
           <img
-            src="https://via.placeholder.com/150"
+            src={client1}
             alt="Client"
             className="w-20 h-20 mr-6 rounded-full"
           />
           {/* Client Details */}
           <div>
-            <h4 className="text-xl font-semibold text-white">Juniper Jasmine</h4>
+            <h4 className="text-xl font-semibold text-white">James William</h4>
             <p className="italic text-yellow-400">Salon Owner</p>
             <blockquote className="mt-2 text-gray-300">
               Thanks a lot, guys. Your work has really made some big differences in my salon. I am very happy with the work you have done for my business website and its marketing.
@@ -43,7 +43,7 @@ const Testimonial = () => {
         </div>
 
         {/* Decorative Arrow (Optional) */}
-        <div className="absolute bottom-0 w-16 h-8 bg-blue-500 right-8"></div>
+        {/* <div className="absolute bottom-0 w-16 h-8 bg-blue-500 right-8"></div> */}
       </div>
       </div>
     </div>

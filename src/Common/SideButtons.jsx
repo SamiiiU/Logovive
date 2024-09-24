@@ -6,9 +6,10 @@ import { BsChatDotsFill } from "react-icons/bs";
 
 const SideButtons = () => {
   return (
-    <div className='fixed translate-x-[90%] sm:translate-x-[80%] flex flex-col pt-20 sm:pt-8 transition-all gap-16  sm:gap-4 top-0 z-50 w-[300px] right-0 h-[90vh] '>
+    <div className='fixed translate-x-[90%] sm:translate-x-[80%] flex flex-col md:pt-20  sm:pt-40 transition-all gap-16 pt-20  sm:gap-4 top-0 z-50 w-[300px] right-0 h-[90vh] '>
+
       <div className='flex  transition-[2s] hover:translate-x-[-90%]  items-center justify-center w-full bg-zinc-900 text-teal-50'>
-           <div className='flex items-center justify-center p-4 text-lg bg-red-600 sm:text-xl'> <FaPhoneAlt  /></div>
+           <div className='flex items-center justify-center p-4 text-lg bg-red-600 sm:text-xl'> <FaPhoneAlt /></div>
             <h1 className='w-full px-4 font-semibold'>(210) 920 8689</h1>
       </div>
 

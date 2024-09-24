@@ -93,10 +93,12 @@ const Nav = () => {
     toggleDarkMode ,
     isQuote , 
     setIsQuote 
-} = useGlobalContext();
+    } = useGlobalContext();
 
 const handleOpenQUote = () => {
+  setMenuOpen(false)
   setIsQuote(true)
+  
 }
 
   return (
@@ -184,7 +186,7 @@ const handleOpenQUote = () => {
 
     {/* Started here the nav for small devices  */}
       
-    <div className={`fixed backdrop-blur-sm animate-fadeDownNav top-0 left-0 ${screenWidth < 860 ? "flex" : 'hidden'} ${isScrollDown ? 'hidden' : 'flex'} z-40 items-center justify-between w-full px-8 mb-6`}>
+    <div className={`fixed backdrop-blur-sm animate-fadeDownNav top-0 left-0 ${screenWidth < 860 ? "flex" : 'hidden'} ${isScrollDown ? 'hidden' : 'flex'} ${isMenuOpen ? "hidden" : 'flex'} z-40 items-center justify-between w-full px-8 mb-6`}>
       {/* Logo  */}
       <div className='logo w-[50%] h-20 '
       style={{backgroundImage : `url(${Logo})` , backgroundSize : '60%' , backgroundPosition : 'left' , backgroundRepeat : 'no-repeat'}}
@@ -199,7 +201,7 @@ const handleOpenQUote = () => {
       
 
       {/* Main navigation  */}
-     <div className={`fixed pt-28 text-xl transition-all bg-   z-50 top-0 ${isMenuOpen ? 'left-0' : 'left-[-100%]'} w-[100%] h-full  bg-zinc-950/70 text-center text-teal-50`}>
+     <div className={`fixed pt-28 text-xl overflow-y-scroll pb-8 transition-all bg-   z-50 top-0 ${isMenuOpen ? 'left-0' : 'left-[-100%]'} w-[100%] h-full  bg-zinc-950/70 text-center text-teal-50`}>
 
       <div className='absolute text-4xl right-6 top-6 text-teal-50' onClick={handlemenu}>
         <AiOutlineMenuFold/>
@@ -259,6 +261,11 @@ const handleOpenQUote = () => {
 
         <Link to='/Contact'><h1 className=' font-medium cursor-pointer hover:text-[#ef572a] transition-all'> Contact</h1></Link>
         
+        <div className='flex flex-col items-center justify-center w-full mt-4 text-sm gap-y-4 xl:text-sm'>
+  
+            <span className='cursor-pointer flex-1  px-3 py-2 font-bold text-center  bg-gradient-to-r  from-[#ef572a] to-[#e80e82] flex-nowrap'>(210) 920 8689</span>
+            <span className='flex-1 px-3 py-2 font-bold text-center cursor-pointer bg-teal-50 text-blue-950' onClick={handleOpenQUote}>Get A Quote</span>
+        </div>
 
     </div>
 

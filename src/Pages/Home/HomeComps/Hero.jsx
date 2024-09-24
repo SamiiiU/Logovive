@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState ,} from "react";
+import { useNavigate } from "react-router-dom";
 import BgHero from "../../../Assets/HeroAsset/Herobg.jpg";
 import {initAOS} from '../../../Animation/AosAnimation'
 import Loader from "../../../Animation/Loader";
@@ -10,6 +11,13 @@ const Hero = () => {
   useEffect(() => {
     // initAOS( 50 , 100 , 1000);
   }, []);
+
+  const navigate = useNavigate();
+
+
+  const toPackage = () => {
+       navigate("/Package");
+  }
 
   return (
     <>
@@ -38,7 +46,7 @@ const Hero = () => {
           MERNSTACK DEVELOPER is a provider of digital services. Our goal is to support companies of all kinds and sectors in their efforts to grow online. You may automate your business and run it around the clock with our services.
           </p>
 
-          <span className="animate-zigzag absolute p-3 cursor-pointer sm:text-lg  text-sm tracking-wide font-semibold sm:bottom-16 bottom-8 bg-gradient-to-r  from-[#ef572a] to-[#e80e82] ">Top Package {"->"}</span>
+          <span className="animate-zigzag absolute p-3 cursor-pointer sm:text-lg  text-sm tracking-wide font-semibold sm:bottom-16 bottom-8 bg-gradient-to-r  from-[#ef572a] to-[#e80e82] " onClick={toPackage}>Top Package {"->"}</span>
         </div>
       </div>
         </div>

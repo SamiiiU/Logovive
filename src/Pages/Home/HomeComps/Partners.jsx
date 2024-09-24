@@ -11,17 +11,27 @@ import offer from '../../../Assets/HeroAsset/offer.webp'
 import Cards from '../HomeComps/Cards'
 import '../Sidebar.css'
 
+import { useGlobalContext } from '../../../GlobalStates/GlobalState';
+
 import {initAOS} from '../../../Animation/AosAnimation'
 
 
 
 const Partners = () => {
     
+    const {
 
-
+        isQuote , 
+        setIsQuote 
+        } = useGlobalContext();
+ 
     useEffect(() => {
         // initAOS( 50 , 10 , 1000 );
       }, []);
+
+      const handleSetQuote = () => {
+        setIsQuote(true);
+      }
 
   return (
 
@@ -117,7 +127,9 @@ const Partners = () => {
 
                     <div className='flex justify-center items-center w-full sm:w-[60%] sm:px-0 px-4  gap-2'>
                         <span className='flex-1 px-3 py-3 font-bold text-center  bg-gradient-to-r  from-[#ef572a] to-[#e80e82] border-2 border-[#e80e82] flex-nowrap cursor-pointer'>Read More</span>
-                        <span className='flex-1 px-4 cursor-pointer py-3 border-2 border-[#ef572a] bg-transparent text-[#ef572a] font-bold text-center'>Get A Quote</span>
+                        <span className='flex-1 px-4 cursor-pointer py-3 border-2 border-[#ef572a] bg-transparent text-[#ef572a] font-bold text-center'
+                        onClick={handleSetQuote}
+                        >Get A Quote</span>
                     </div>
                 </div>
 

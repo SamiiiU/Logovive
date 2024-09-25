@@ -8,6 +8,7 @@ import Combo from './PackagesComps/Combo'
 import Cards from './PackagesComps/Cards'
 import ContactForm from '../../Common/ContactForm'
 import Exp from './PackagesComps/Exp'
+import Orderform from '../../Common/Orderform'
 
 const Package = () => {
   
@@ -19,8 +20,10 @@ const Package = () => {
       <Nav/>
         <SideButtons/>
         <Hero/>
+        <Orderform/>
         <OurPack/>
         <Cards/>
+
         <Combo/>
         <Exp/>
         <ContactForm/>

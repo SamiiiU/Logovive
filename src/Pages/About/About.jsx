@@ -7,6 +7,7 @@ import Strategy from './AboutComps/Strategy'
 import Services from './AboutComps/Services'
 import Expierence from './AboutComps/Exp'
 import ContactForm from '../../Common/ContactForm'
+import Quote from '../../Common/Quote'
 
 const About = () => {
 
@@ -18,6 +19,7 @@ const About = () => {
     <div className='w-full overflow-x-hidden'>
         <SideButtons/>
         <Nav/>
+        <Quote/>
         <Hero/>
         <Strategy/>
         <Services/>

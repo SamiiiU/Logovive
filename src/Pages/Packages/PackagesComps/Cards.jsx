@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import {packageData} from '../PackagesData'
+import { useGlobalContext } from '../../../GlobalStates/GlobalState';
 const Cards = () => {
     const [cards , setType] = useState(packageData.Logo)
     const [previousElement, setPreviousElement] = useState(null);
@@ -49,27 +50,28 @@ const Cards = () => {
             setPreviousElement(selectedElement); // Set the new element as the previous one
         }
             }
+      
+        
+    // uaing global context 
 
-    
+    const {
 
-const ChangeShow = (e) => {
-  // Define gradient classes as an array
-  const gradientClasses = ['bg-gradient-to-r', 'from-[#ef572a]', 'to-[#e80e82]'];
-  
-  let selectedId = e.target.id; // Get the id of the clicked element
-  let selectedElement = document.getElementById(selectedId); // Select the element by its id
+        price , setPrice,
+        packageSelect , setPackage,
+        isOrder , setIsOrder
+        } = useGlobalContext();
+            
+              
+    const handleOrder = (item) => {
+        console.log(item.name , item.price);
+        setPrice(item.price);
+        setPackage(item.name);
+        console.log(packageSelect , price)
+        setIsOrder(true)
 
-  // Remove the gradient classes from the previous element if it exists
-  if (previousElement) {
-    previousElement.classList.remove(...gradientClasses); // Spread operator to pass each class separately
-  }
 
-  // Add the gradient classes to the new selected element
-  if (selectedElement) {
-    selectedElement.classList.add(...gradientClasses); // Spread operator to pass each class separately
-    setPreviousElement(selectedElement); // Set the new element as the previous one
-  }
-};
+    }        
+
   return (
     <div className='w-full px-8 py-12 sm:px-16 xl:px-28 bg-[#181818] text-teal-50 '>
             <div className='flex flex-wrap items-center justify-center w-full py-8 gap-x-16 gap-y-4 xl:text-lg'>
@@ -99,12 +101,12 @@ const ChangeShow = (e) => {
 
                     <div className='flex items-center justify-between w-full px-8 py-2 text-lg font-semibold border-y-2 border-teal-50'>
                        <h1 className='flex-1 text-xl font-semibold tracking-tighter sm:text-3xl text-blue-950'>All this in Just </h1>
-                       <div className='flex justify-end flex-1 text-3xl font-bold text-[#e80e82]'>${item.price}</div>
+                       <div className='flex justify-end flex-1 text-3xl font-bold text-[#e80e82] '>${item.price}</div>
                     </div>   
                     
 
                     <div className='flex justify-center w-full gap-4 px-6 py-2 uppercase'>
-                        <span className='px-4 py-2 rounded-full text-xs sm:text-md font-bold  bg-gradient-to-r from-[#ef572a]   to-[#e80e82] text-teal-50'>ORDER NOW</span>
+                        <span className='px-4 py-2 rounded-full text-xs sm:text-md font-bold  bg-gradient-to-r from-[#ef572a] cursor-pointer  to-[#e80e82] text-teal-50' onClick={() => handleOrder(item)}>ORDER NOW</span>
 
                         <span className='px-4 py-2 font-bold text-md '>Book a call</span>
                     </div>

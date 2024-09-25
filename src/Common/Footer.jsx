@@ -7,6 +7,7 @@ import { IoLocationSharp } from "react-icons/io5";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -26,10 +27,10 @@ const Footer = () => {
             
             <div className='flex flex-col flex-1 py-4 gap-y-2'>
                 <h1 className='text-2xl font-bold'>OUR SERVICES</h1>
-                <p className=' hover:text-[#ef572a] cursor-pointer font-medium transition-all'>Web Design</p>
-                <p className=' hover:text-[#ef572a] cursor-pointer font-medium transition-all'>E-Commerce</p>
-                <p className=' hover:text-[#ef572a] cursor-pointer font-medium transition-all'>Wordpress</p>
-                <p className=' hover:text-[#ef572a] cursor-pointer font-medium transition-all'>Shopify</p>
+                <Link to="/webdev" className=' hover:text-[#ef572a] cursor-pointer font-medium transition-all'>Web Design</Link>
+                <Link to="/ecommerce" className=' hover:text-[#ef572a] cursor-pointer font-medium transition-all'>E-Commerce</Link>
+                <Link to="/wordpress" className=' hover:text-[#ef572a] cursor-pointer font-medium transition-all'>Wordpress</Link>
+                <Link to="/shopify" className=' hover:text-[#ef572a] cursor-pointer font-medium transition-all'>Shopify</Link>
             </div>
 
             <div className='flex flex-wrap flex-1 gap-1 py-4 font-medium'>
@@ -61,17 +62,17 @@ const Footer = () => {
                 <h1 className='text-xl font-semibold'>WE DO ACCEPT ALL CARDS</h1>
 
                 <div className='flex w-full gap-2 my-4'>
-                    <span className='cursor-pointer hover:bg-[#ef572a] p-3 bg-teal-50 rounded-full text-zinc-900 text-xl'>
+                    <a href='https://www.facebook.com/' target='_blank' className='cursor-pointer hover:bg-[#ef572a] p-3 bg-teal-50 rounded-full text-zinc-900 text-xl'>
                         <FaFacebookSquare/>
-                    </span>
+                    </a>
 
-                    <span className='cursor-pointer hover:bg-[#ef572a] p-3 bg-teal-50 rounded-full text-zinc-900 text-xl'>
+                    <a href='https://www.instagram.com/' target='_blank' className='cursor-pointer hover:bg-[#ef572a] p-3 bg-teal-50 rounded-full text-zinc-900 text-xl'>
                         <FaInstagramSquare/>
-                    </span>
+                    </a>
 
-                    <span className='cursor-pointer hover:bg-[#ef572a] p-3 bg-teal-50 rounded-full text-zinc-900 text-xl'>
+                    <a href='https://www.linkedin.com/' target='_blank' className='cursor-pointer hover:bg-[#ef572a] p-3 bg-teal-50 rounded-full text-zinc-900 text-xl'>
                         <FaLinkedin/>
-                    </span>
+                    </a>
                 </div>
 
             </div>

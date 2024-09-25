@@ -10,6 +10,7 @@ import SideButtons from '../../Common/SideButtons'
 import ContactForm from '../../Common/ContactForm'
 import Testimonial from '../../Common/Tetimonal'
 import Quote from '../../Common/Quote'
+import Orderform from '../../Common/Orderform'
 
 const Home = () => {
 
@@ -20,8 +21,8 @@ const Home = () => {
     <div className='w-full overflow-x-hidden transition-all'>
     <SideButtons/>
     <Nav/>
-    
     <Hero/>
+    <Orderform/>
     <Partners/>
     <Special/>
     <Quote/>

@@ -1,12 +1,22 @@
 import React, { useEffect } from "react";
 import glass from '../../../Assets/HeroAsset/glass.webp'
 import {initAOS} from '../../../Animation/AosAnimation'
+import { Link } from "react-router-dom";
+import { useGlobalContext } from "../../../GlobalStates/GlobalState";
 
 
 const How = () => {
 
+  
+  const {
 
+    isQuote , 
+    setIsQuote 
+    } = useGlobalContext();
 
+    const handleQuote = () => {
+      setIsQuote(true)
+    }
   
   return (
     <div className="w-full py-8 bg-[#181818] text-teal-50">
@@ -79,8 +89,8 @@ const How = () => {
                 <p className="mb-4 tracking-wider text-center">Logovive is comprised of many people who have spent decades in their fields of web technology. We are dedicated to delivering the best we can offer our clients.</p>
 
                 <div className="flex justify-center w-full gap-8 md:justify-start">
-                    <p className="flex-1 py-3 font-semibold text-center rounded-full md:px-8 bg-teal-50 text-zinc-900">VIEW PRICING</p>
-                    <p className="flex-1 py-3 text-center border-2 border-dashed md:px-8 border-teal-50 text-teal-50">VIEW PRICING</p>
+                    <Link to="/Package" className="flex-1 py-3 font-semibold text-center transition-all border-2 rounded-full hover:bg-transparent hover:border-teal-50 hover:text-teal-50 md:px-8 bg-teal-50 text-zinc-900">VIEW PRICING</Link>
+                    <p onClick={handleQuote} className="flex-1 py-3 text-center transition-all border-2 border-dashed cursor-pointer hover:bg-teal-50 md:px-8 hover:text-zinc-900 text-teal-50">VIEW PRICING</p>
                 </div>
 
             </div>

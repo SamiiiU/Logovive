@@ -1,9 +1,33 @@
 import React, { useEffect, useState } from 'react'
 import cards from '../../Pages/Home/HomeData/Pricecards'
+import Orderform from '../../Common/Orderform'
+import { useGlobalContext } from '../../GlobalStates/GlobalState'
+import '../../Pages/Home/Sidebar.css'
 
 const Cards = ({type}) => {
 
+  const {
+
+    price , setPrice,
+    packageSelect , setPackage,
+    isOrder , setIsOrder
+    } = useGlobalContext();
+
+  
+  const handleOrder = (item) => {
+      console.log(item.name , item.price);
+      setPrice(item.price);
+      setPackage(item.name);
+      console.log(packageSelect , price)
+      setIsOrder(true)
+
+
+  }
+  
+  
   const [show , setCards] = useState(cards.WebDesign)
+
+
 
    useEffect(() =>{
         if(type === "Shopify"){
@@ -20,13 +44,16 @@ const Cards = ({type}) => {
 
         else if(type === "SEO"){
           setCards(cards.SEO)
+        }else{
+          setCards(cards.WebDesign)
         }
    } , [show])
 
 
   return (
-    <div className='w-full md:px-28 sm:px-16 px-8 py-16 bg-[#181818] text-teal-50'>
-      <div className='flex flex-col items-end justify-center w-full py-4 mb-8 text-3xl gap-y-4 sm:flex-row lg:text-4xl'>
+    <div className='w-full md:px-28 sm:px-16 px-8 py-16 bg-[#181818] '>
+      <Orderform/>
+      <div className='flex flex-col items-end justify-center w-full py-4 mb-8 text-3xl text-teal-50 gap-y-4 sm:flex-row lg:text-4xl'>
             <div className= "sm:w-[40%] w-full ">
                 <h1 className=' font-bold text-[#f89521] my-2'>Choose The Plan</h1>
                 <h1 className='font-bold '>That Is Right For You!</h1>
@@ -36,7 +63,7 @@ const Cards = ({type}) => {
 
             </div>
 
-            <div className='relative flex flex-wrap items-center justify-between w-full gap-y-4 '>
+            <div className='relative flex flex-wrap items-center justify-between w-full text-teal-50 gap-y-4 '>
                 {show.map((item , idx) => (
                     <div key={idx} className='md:w-[33%]  sm:w-[45%] w-full py-4 bg-[#222222] md:hover:scale-[105%] transition-all'>
                     <div className='flex items-center justify-center w-full py-2 text-2xl font-bold text-center border-b-2 border-b-teal-50'>{item.name} <br/> Package</div>
@@ -57,7 +84,7 @@ const Cards = ({type}) => {
                     
 
                     <div className='flex justify-center w-full py-4 '><span className='absolute px-4 py-2 
-                    bg-gradient-to-r  from-[#ef572a] to-[#e80e82] font-semibold'>ORDER NOW</span></div>
+                    bg-gradient-to-r  from-[#ef572a] to-[#e80e82] font-semibold cursor-pointer focus:bg-[#ef572a] ' onClick={() => handleOrder(item)}>ORDER NOW</span></div>
 
                 </div> 
                 ))}

@@ -1,12 +1,23 @@
 import React from 'react'
-
+import { Link, useNavigate } from "react-router-dom";
+import { useGlobalContext } from '../../../GlobalStates/GlobalState';
 const Hero = () => {
+
+
+  const {
+
+    isQuote , 
+    setIsQuote 
+    } = useGlobalContext();
+
+    
+    const handleSetQuote = () => {
+      setIsQuote(true);
+    }
   return (
     <div>
       <div
-            className=" z-0 w-full flex  justify-start items-center bg-gradient-to-b from-[#ef572a] to-[#972003] h-1/2 md:h-[90vh] "
-          
-          >
+          className=" z-0 w-full flex  justify-start items-center bg-gradient-to-b from-[#ef572a] to-[#972003] h-1/2 md:h-[90vh] ">
             <div className="relative mt-20 z-20 md:w-[50%] w-full sm:px-24 px-8 md:h-[80%]   text-teal-50  flex justify-center items-start flex-col">
               <h1 className='px-3 mb-2 font-bold text-[#ef572a] rounded-md bg-teal-50 '>PORTFOLIO</h1>
           
@@ -17,8 +28,8 @@ const Hero = () => {
 
 
               <div className='w-full py-9 '>
-              <span className="p-3 sm:text-sm text-xs font-semibold  uppercase border-2 cursor-pointer border-teal-50 tracking-widest bg-teal-50 text-[#032c61]">OUR SERVICES</span>
-              <span className="p-3 mx-6 sm:text-sm text-xs font-semibold tracking-widest border-2 cursor-pointer uppercase transition-all hover:bg-transparent hover:text-teal-50 border-teal-50 bg-teal-50 text-[#032c61]">Get Started </span>
+              <Link to="/Package" className="p-3 sm:text-sm text-xs font-semibold  uppercase border-2 cursor-pointer border-teal-50 tracking-widest bg-teal-50 text-[#032c61]" >OUR SERVICES</Link>
+              <span className="p-3 mx-6 sm:text-sm text-xs font-semibold tracking-widest border-2 cursor-pointer uppercase transition-all hover:bg-transparent hover:text-teal-50 border-teal-50 bg-teal-50 text-[#032c61]" onClick={handleSetQuote}>Get Started </span>
               </div>
             </div>
 

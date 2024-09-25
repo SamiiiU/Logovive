@@ -11,20 +11,21 @@ export const useGlobalContext = () => {
 // Create a provider component
 export const GlobalProvider = ({ children }) => {
     // Example of global state (You can add more states as needed)
-    const [isDarkMode, setIsDarkMode] = useState(false);
-    const [isQuote , setIsQuote] = useState(false)
 
-    // Toggle the dark mode state
-    const toggleDarkMode = () => {
-        setIsDarkMode(prevMode => !prevMode);
-    };
+    const [isQuote , setIsQuote] = useState(false);
+    const [isOrder , setIsOrder] = useState(false)
+    const [price , setPrice] = useState(null)
+    const [packageSelect , setPackage] = useState("");
+
+
 
     return (
         <GlobalContext.Provider value={{ 
-            isDarkMode, 
-            toggleDarkMode ,
             isQuote , 
-            setIsQuote
+            setIsQuote,
+            price , setPrice,
+            packageSelect , setPackage,
+            isOrder , setIsOrder
 
             }}>
             {children}

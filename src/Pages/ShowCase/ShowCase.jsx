@@ -4,6 +4,7 @@ import SideButtons from '../../Common/SideButtons'
 import Footer from '../../Common/Footer'
 import Hero from './ShowcaseComps/Hero'
 import OurWork from './ShowcaseComps/OurWork'
+import Quote from '../../Common/Quote'
 
 const ShowCase = () => {
 
@@ -17,6 +18,7 @@ const ShowCase = () => {
       <Nav/>
       <SideButtons/>
         <Hero/>
+        <Quote/>
         <OurWork/>
 
       <Footer/>

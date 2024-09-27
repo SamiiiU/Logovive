@@ -1,5 +1,6 @@
 import React from 'react'
 import Logo from '../Assets/mern.png'
+import trustPng from '../Assets/trustpilot.png'
 
 import { FaPhone } from "react-icons/fa6";
 import { MdOutlineMail } from "react-icons/md";
@@ -13,9 +14,9 @@ const Footer = () => {
   return (
     <div className='w-full sm:px-14 md:px-24 p-8 sm:py-16  bg-[#222222] text-teal-50'>
         <div className='flex flex-col flex-wrap w-full gap-4 md:flex-row'>
-            <div className='flex flex-col flex-1 py-4 pr-10'>
+            <div className='relative flex flex-col justify-between flex-1 pt-4 pr-10 '>
 
-            <div className='logo w-[50%]  h-12 mb-16'
+            <div className='logo w-[50%]  h-12 mb-12'
                 style={{backgroundImage : `url(${Logo})` , backgroundSize : '60%' , backgroundPosition : 'left' , backgroundRepeat : 'no-repeat'}}
             ></div> 
 
@@ -23,7 +24,13 @@ const Footer = () => {
             <p className='font-medium'>
             We are professionals and well-known for our agility and flexibility in offering website and other business solutions to all businesses to manage the business and keep it operational around the clock.
             </p>
+
+            <div className='h-12 mt-8 transition-all duration-500 cursor-pointer w-60 bg-teal-50 rounded-3xl hover:scale-105 '
+                style={{backgroundImage : `url(${trustPng})` , backgroundSize : '80%' , backgroundPosition : 'center' , backgroundRepeat : 'no-repeat'}}
+            ></div> 
             </div>
+
+            
             
             <div className='flex flex-col flex-1 py-4 gap-y-2'>
                 <h1 className='text-2xl font-bold'>OUR SERVICES</h1>
